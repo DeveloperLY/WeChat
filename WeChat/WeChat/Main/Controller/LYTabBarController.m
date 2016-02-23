@@ -14,7 +14,6 @@
 #import "LYDiscoverViewController.h"
 #import "LYMeViewController.h"
 
-#import "UIImage+LY.h"
 
 @interface LYTabBarController ()
 
@@ -24,9 +23,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view setBackgroundColor:[UIColor whiteColor]];
-    [self.tabBar setBackgroundColor:DEFAULT_SEARCHBAR_COLOR];
-    [self.tabBar setTintColor:DEFAULT_GREEN_COLOR];
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.tabBar.backgroundColor = DEFAULT_SEARCHBAR_COLOR;
+    self.tabBar.tintColor = DEFAULT_GREEN_COLOR;
     
     // 添加所有的子控件
     [self setUpAllChildViewController];

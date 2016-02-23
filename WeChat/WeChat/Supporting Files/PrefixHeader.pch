@@ -11,4 +11,8 @@
 
 #import "Macros.h"
 
+/** ----- Category ----- */
+#import "UIImage+LY.h"
+#import "UIView+LY.h"
+
 #endif /* WeChat_PrefixHeader_pch */

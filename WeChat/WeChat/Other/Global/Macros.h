@@ -32,5 +32,9 @@
 #define     DEFAULT_TEXT_GRAY_COLOR         [UIColor grayColor]
 #define     DEFAULT_LINE_GRAY_COLOR          LYColor(188.0, 188.0, 188.0, 0.6f)
 
+/** ----- Path ----- */
+#define     PATH_DOCUMENT                   [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+#define     PATH_CHATREC_IMAGE              [PATH_DOCUMENT stringByAppendingPathComponent:@"ChatRec/Images"]
+
 
 #endif /* WeChat_Macros_h */
