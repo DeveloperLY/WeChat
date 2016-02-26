@@ -12,5 +12,5 @@
 
 + (NSMutableArray *)getMineVCItems;
 
-
++ (NSMutableArray *)getMineDetailVCItems;
 @end

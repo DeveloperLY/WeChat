@@ -7,6 +7,7 @@
 //
 
 #import "LYMeViewController.h"
+#import "LYMeDetailViewController.h"
 
 #import "LYCellItem.h"
 #import "LYUser.h"
@@ -36,6 +37,12 @@ static NSString * const ID = @"MineCell";
     
     // 加载cell 数据
     [self loadData];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    
+    [self setHidesBottomBarWhenPushed:NO];
 }
 
 /**
@@ -90,7 +97,15 @@ static NSString * const ID = @"MineCell";
 }
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    id vc = nil;
+    if (indexPath.section == 0 && indexPath.row == 0) {     // 个人信息
+        vc = [[LYMeDetailViewController alloc] init];
+    }
+    if (vc != nil) {
+        [self setHidesBottomBarWhenPushed:YES];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
 

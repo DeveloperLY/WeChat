@@ -13,6 +13,7 @@
 		CD41425C1C80011E00ADD5F6 /* LYBaseHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD41425B1C80011E00ADD5F6 /* LYBaseHeaderFooterView.m */; };
 		CD41425F1C80013F00ADD5F6 /* LYBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD41425E1C80013F00ADD5F6 /* LYBaseCell.m */; };
 		CD77D1CF1C802CF300767B8D /* UIDevice+LY.m in Sources */ = {isa = PBXBuildFile; fileRef = CD77D1CE1C802CF300767B8D /* UIDevice+LY.m */; };
+		CD77D1D21C80385A00767B8D /* LYMeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD77D1D11C80385A00767B8D /* LYMeDetailViewController.m */; };
 		CD784A781C7EF13D00521B39 /* LYUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CD784A771C7EF13D00521B39 /* LYUIHelper.m */; };
 		CD784A7D1C7EF3C800521B39 /* LYCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CD784A7C1C7EF3C800521B39 /* LYCellItem.m */; };
 		CDA96F851C7C548900E76D94 /* LYConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA96F841C7C548900E76D94 /* LYConversation.m */; };
@@ -74,6 +75,8 @@
 		CD41425E1C80013F00ADD5F6 /* LYBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYBaseCell.m; sourceTree = "<group>"; };
 		CD77D1CD1C802CF300767B8D /* UIDevice+LY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+LY.h"; sourceTree = "<group>"; };
 		CD77D1CE1C802CF300767B8D /* UIDevice+LY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+LY.m"; sourceTree = "<group>"; };
+		CD77D1D01C80385A00767B8D /* LYMeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYMeDetailViewController.h; sourceTree = "<group>"; };
+		CD77D1D11C80385A00767B8D /* LYMeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYMeDetailViewController.m; sourceTree = "<group>"; };
 		CD784A761C7EF13D00521B39 /* LYUIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYUIHelper.h; sourceTree = "<group>"; };
 		CD784A771C7EF13D00521B39 /* LYUIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYUIHelper.m; sourceTree = "<group>"; };
 		CD784A7B1C7EF3C800521B39 /* LYCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCellItem.h; sourceTree = "<group>"; };
@@ -469,6 +472,8 @@
 			children = (
 				CDD05AE21C7B69750022BD65 /* LYMeViewController.h */,
 				CDD05AE31C7B69750022BD65 /* LYMeViewController.m */,
+				CD77D1D01C80385A00767B8D /* LYMeDetailViewController.h */,
+				CD77D1D11C80385A00767B8D /* LYMeDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -648,6 +653,7 @@
 				CD77D1CF1C802CF300767B8D /* UIDevice+LY.m in Sources */,
 				CDD05AD01C7B67380022BD65 /* LYNavigationController.m in Sources */,
 				CDD05ADE1C7B69530022BD65 /* LYContactsViewController.m in Sources */,
+				CD77D1D21C80385A00767B8D /* LYMeDetailViewController.m in Sources */,
 				CDAFE24E1C7CC87300C8FB91 /* LYUserDetailCell.m in Sources */,
 				CDA96F8D1C7C599D00E76D94 /* UIView+LY.m in Sources */,
 				CDA96F8A1C7C56E600E76D94 /* LYCommonCell.m in Sources */,

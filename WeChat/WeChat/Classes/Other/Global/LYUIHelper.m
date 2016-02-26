@@ -30,5 +30,23 @@
     return items;
 }
 
++ (NSMutableArray *)getMineDetailVCItems {
+    NSMutableArray *items = [[NSMutableArray alloc] init];
+    LYCellItem *avatar = [LYCellItem createWithImageName:nil title:@"头像" subTitle:nil rightImageName:@"bc.jpg"];
+    LYCellItem *name = [LYCellItem createWithTitle:@"名字" subTitle:@"冰晨"];
+    LYCellItem *num = [LYCellItem createWithTitle:@"微信号" subTitle:@"WX774136501"];
+    LYCellItem *code = [LYCellItem createWithTitle:@"我的二维码"];
+    LYCellItem *address = [LYCellItem createWithTitle:@"我的地址"];
+    LYCellGrounp *frist = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:avatar, name, num, code, address, nil];
+    [items addObject:frist];
+    
+    LYCellItem *sex = [LYCellItem createWithTitle:@"性别" subTitle:@"男"];
+    LYCellItem *pos = [LYCellItem createWithTitle:@"地址" subTitle:@"广东 广州"];
+    LYCellItem *proverbs = [LYCellItem createWithTitle:@"个性签名" subTitle:@"一枚单线程程序猿!"];
+    LYCellGrounp *second = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:sex, pos, proverbs, nil];
+    [items addObject:second];
+    
+    return items;
+}
 
 @end
