@@ -14,6 +14,8 @@
 		CD41425F1C80013F00ADD5F6 /* LYBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD41425E1C80013F00ADD5F6 /* LYBaseCell.m */; };
 		CD77D1CF1C802CF300767B8D /* UIDevice+LY.m in Sources */ = {isa = PBXBuildFile; fileRef = CD77D1CE1C802CF300767B8D /* UIDevice+LY.m */; };
 		CD77D1D21C80385A00767B8D /* LYMeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD77D1D11C80385A00767B8D /* LYMeDetailViewController.m */; };
+		CD77D1D61C804B1800767B8D /* LYFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD77D1D51C804B1800767B8D /* LYFriendCell.m */; };
+		CD77D1D91C804C8E00767B8D /* LYFriendHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD77D1D81C804C8E00767B8D /* LYFriendHeaderView.m */; };
 		CD784A781C7EF13D00521B39 /* LYUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CD784A771C7EF13D00521B39 /* LYUIHelper.m */; };
 		CD784A7D1C7EF3C800521B39 /* LYCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CD784A7C1C7EF3C800521B39 /* LYCellItem.m */; };
 		CDA96F851C7C548900E76D94 /* LYConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA96F841C7C548900E76D94 /* LYConversation.m */; };
@@ -44,6 +46,8 @@
 		CDD05AE11C7B69670022BD65 /* LYDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD05AE01C7B69670022BD65 /* LYDiscoverViewController.m */; };
 		CDD05AE41C7B69750022BD65 /* LYMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD05AE31C7B69750022BD65 /* LYMeViewController.m */; };
 		CDD05AE81C7B6AAD0022BD65 /* UIImage+LY.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD05AE71C7B6AAD0022BD65 /* UIImage+LY.m */; };
+		CDE74A3B1C80999B0082335D /* gy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDE74A3A1C80999B0082335D /* gy.jpg */; };
+		CDE74A3E1C809A3E0082335D /* LYDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE74A3D1C809A3E0082335D /* LYDataHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,10 @@
 		CD77D1CE1C802CF300767B8D /* UIDevice+LY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+LY.m"; sourceTree = "<group>"; };
 		CD77D1D01C80385A00767B8D /* LYMeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYMeDetailViewController.h; sourceTree = "<group>"; };
 		CD77D1D11C80385A00767B8D /* LYMeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYMeDetailViewController.m; sourceTree = "<group>"; };
+		CD77D1D41C804B1800767B8D /* LYFriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYFriendCell.h; sourceTree = "<group>"; };
+		CD77D1D51C804B1800767B8D /* LYFriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYFriendCell.m; sourceTree = "<group>"; };
+		CD77D1D71C804C8E00767B8D /* LYFriendHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYFriendHeaderView.h; sourceTree = "<group>"; };
+		CD77D1D81C804C8E00767B8D /* LYFriendHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYFriendHeaderView.m; sourceTree = "<group>"; };
 		CD784A761C7EF13D00521B39 /* LYUIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYUIHelper.h; sourceTree = "<group>"; };
 		CD784A771C7EF13D00521B39 /* LYUIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYUIHelper.m; sourceTree = "<group>"; };
 		CD784A7B1C7EF3C800521B39 /* LYCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCellItem.h; sourceTree = "<group>"; };
@@ -132,6 +140,9 @@
 		CDD05AE71C7B6AAD0022BD65 /* UIImage+LY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LY.m"; sourceTree = "<group>"; };
 		CDD05AEA1C7B6ED40022BD65 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		CDD05AEB1C7B715D0022BD65 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CDE74A3A1C80999B0082335D /* gy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gy.jpg; sourceTree = "<group>"; };
+		CDE74A3C1C809A3E0082335D /* LYDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYDataHelper.h; sourceTree = "<group>"; };
+		CDE74A3D1C809A3E0082335D /* LYDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYDataHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +200,17 @@
 				CD41425B1C80011E00ADD5F6 /* LYBaseHeaderFooterView.m */,
 				CD41425D1C80013F00ADD5F6 /* LYBaseCell.h */,
 				CD41425E1C80013F00ADD5F6 /* LYBaseCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CD77D1D31C8049EC00767B8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD77D1D41C804B1800767B8D /* LYFriendCell.h */,
+				CD77D1D51C804B1800767B8D /* LYFriendCell.m */,
+				CD77D1D71C804C8E00767B8D /* LYFriendHeaderView.h */,
+				CD77D1D81C804C8E00767B8D /* LYFriendHeaderView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -259,6 +281,7 @@
 		CDAFE2221C7CA36200C8FB91 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CDE74A3A1C80999B0082335D /* gy.jpg */,
 				CD4142531C7FFAD600ADD5F6 /* bc.jpg */,
 				CDAFE2291C7CA47100C8FB91 /* gn.jpg */,
 				CDAFE2251C7CA45300C8FB91 /* jtm.jpg */,
@@ -276,7 +299,8 @@
 				CDAFE2421C7CBDC600C8FB91 /* LYUser.h */,
 				CDAFE2431C7CBDC600C8FB91 /* LYUser.m */,
 			);
-			path = Model;
+			name = Model;
+			path = ../Contacts/Model;
 			sourceTree = "<group>";
 		};
 		CDAFE2481C7CC2A700C8FB91 /* View */ = {
@@ -416,8 +440,8 @@
 		CDD05AD21C7B67E50022BD65 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
+				CD77D1D31C8049EC00767B8D /* View */,
 				CDD05AD91C7B691A0022BD65 /* Controller */,
-				CDAFE2411C7CBDAE00C8FB91 /* Model */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -425,6 +449,7 @@
 		CDD05AD31C7B68140022BD65 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				CDAFE2411C7CBDAE00C8FB91 /* Model */,
 				CDD05ADA1C7B69240022BD65 /* Controller */,
 				CDAFE2481C7CC2A700C8FB91 /* View */,
 			);
@@ -501,6 +526,8 @@
 				CDD05AEA1C7B6ED40022BD65 /* Macros.h */,
 				CD4142501C7FED9300ADD5F6 /* LYUserHelper.h */,
 				CD4142511C7FED9300ADD5F6 /* LYUserHelper.m */,
+				CDE74A3C1C809A3E0082335D /* LYDataHelper.h */,
+				CDE74A3D1C809A3E0082335D /* LYDataHelper.m */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -621,6 +648,7 @@
 				CDAFE2281C7CA46300C8FB91 /* sym.jpg in Resources */,
 				CDAFE2241C7CA44500C8FB91 /* xsy.jpg in Resources */,
 				CDD05A9E1C7B62230022BD65 /* Main.storyboard in Resources */,
+				CDE74A3B1C80999B0082335D /* gy.jpg in Resources */,
 				CDAFE22A1C7CA47100C8FB91 /* gn.jpg in Resources */,
 				CD4142541C7FFAD600ADD5F6 /* bc.jpg in Resources */,
 			);
@@ -653,6 +681,8 @@
 				CD77D1CF1C802CF300767B8D /* UIDevice+LY.m in Sources */,
 				CDD05AD01C7B67380022BD65 /* LYNavigationController.m in Sources */,
 				CDD05ADE1C7B69530022BD65 /* LYContactsViewController.m in Sources */,
+				CD77D1D91C804C8E00767B8D /* LYFriendHeaderView.m in Sources */,
+				CD77D1D61C804B1800767B8D /* LYFriendCell.m in Sources */,
 				CD77D1D21C80385A00767B8D /* LYMeDetailViewController.m in Sources */,
 				CDAFE24E1C7CC87300C8FB91 /* LYUserDetailCell.m in Sources */,
 				CDA96F8D1C7C599D00E76D94 /* UIView+LY.m in Sources */,
@@ -668,6 +698,7 @@
 				CDD05AD71C7B68FB0022BD65 /* LYWeChatViewController.m in Sources */,
 				CDD05A951C7B62230022BD65 /* main.m in Sources */,
 				CDD05AE41C7B69750022BD65 /* LYMeViewController.m in Sources */,
+				CDE74A3E1C809A3E0082335D /* LYDataHelper.m in Sources */,
 				CDD05AE11C7B69670022BD65 /* LYDiscoverViewController.m in Sources */,
 				CDA96F851C7C548900E76D94 /* LYConversation.m in Sources */,
 				CDAFE2441C7CBDC600C8FB91 /* LYUser.m in Sources */,

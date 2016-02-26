@@ -8,7 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+@class LYCellGrounp;
+
 @interface LYUIHelper : NSObject
+
++ (LYCellGrounp *)getFriendsListItemsGroup;
 
 + (NSMutableArray *)getDiscoverItems;
 

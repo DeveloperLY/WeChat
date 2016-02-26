@@ -10,4 +10,11 @@
 
 @interface LYContactsViewController : UITableViewController
 
+/** 好友列表数据 */
+@property (nonatomic, strong) NSMutableArray *friendsArray;
+/** 格式化的好友列表数据 */
+@property (nonatomic, strong) NSMutableArray *data;
+/** 拼音首字母列表 */
+@property (nonatomic, strong) NSMutableArray *section;
+
 @end

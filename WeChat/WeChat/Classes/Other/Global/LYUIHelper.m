@@ -11,6 +11,15 @@
 
 @implementation LYUIHelper
 
++ (LYCellGrounp *)getFriendsListItemsGroup {
+    LYCellItem *notify = [LYCellItem createWithImageName:@"plugins_FriendNotify" title:@"新的朋友"];
+    LYCellItem *friendGroup = [LYCellItem createWithImageName:@"add_friend_icon_addgroup" title:@"群聊"];
+    LYCellItem *tag = [LYCellItem createWithImageName:@"Contact_icon_ContactTag" title:@"标签"];
+    LYCellItem *offical = [LYCellItem createWithImageName:@"add_friend_icon_offical" title:@"公众号"];
+    LYCellGrounp *group = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:notify, friendGroup, tag, offical, nil];
+    return group;
+}
+
 + (NSMutableArray *)getMineVCItems {
     NSMutableArray *items = [[NSMutableArray alloc] init];
     LYCellItem *album = [LYCellItem createWithImageName:@"MoreMyAlbum" title:@"相册"];
