@@ -14,5 +14,7 @@
 /** ----- Category ----- */
 #import "UIImage+LY.h"
 #import "UIView+LY.h"
+#import "NSString+LY.h"
+#import "UIDevice+LY.h"
 
 #endif /* WeChat_PrefixHeader_pch */
