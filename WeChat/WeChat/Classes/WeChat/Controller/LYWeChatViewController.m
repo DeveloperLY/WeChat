@@ -11,6 +11,8 @@
 #import "LYConversationCell.h"
 #import "LYConversation.h"
 
+#import "LYWeChatSearchViewController.h"
+
 static NSString * const ID = @"WeChatCell";
 
 @interface LYWeChatViewController () <UISearchBarDelegate>
@@ -22,12 +24,14 @@ static NSString * const ID = @"WeChatCell";
 
 @property (nonatomic, strong) UIBarButtonItem *navRightButton;
 
+
+@property (nonatomic, strong) LYWeChatSearchViewController *searchVC;
+
 @end
 
 @implementation LYWeChatViewController
 
 #pragma mark - LifeCycle
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -41,6 +45,11 @@ static NSString * const ID = @"WeChatCell";
     [self loadNewData];
 }
 
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    [self setHidesBottomBarWhenPushed:NO];
+}
+
 /**
  *  设置TableView
  */
@@ -49,6 +58,7 @@ static NSString * const ID = @"WeChatCell";
     self.tableView.tableFooterView = [[UIView alloc] init];
     
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([LYConversationCell class]) bundle:nil] forCellReuseIdentifier:ID];
+    [self.tableView setTableHeaderView:self.searchController.searchBar];
     
     self.tableView.rowHeight = 63;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -73,7 +83,7 @@ static NSString * const ID = @"WeChatCell";
     NSMutableArray *models = [[NSMutableArray alloc] initWithCapacity:10];
     LYConversation *item1 = [[LYConversation alloc] init];
     item1.from = [NSString stringWithFormat:@"项少羽"];
-    item1.message = @"晨哥，天明又闯祸了！！";
+    item1.message = @"阳哥，天明又闯祸了！！";
     item1.avatarURL = [NSURL URLWithString:@"xsy.jpg"];
     item1.messageCount = 0;
     item1.date = [NSDate date];
@@ -143,7 +153,25 @@ static NSString * const ID = @"WeChatCell";
     return _navRightButton;
 }
 
+- (LYWeChatSearchViewController *)searchVC {
+    if (!_searchVC) {
+        _searchVC = [[LYWeChatSearchViewController alloc] init];
+    }
+    return _searchVC;
+}
 
-
+- (UISearchController *)searchController {
+    if (!_searchController) {
+        _searchController = [[UISearchController alloc] initWithSearchResultsController:self.searchVC];
+        [_searchController setSearchResultsUpdater: self.searchVC];
+        [_searchController.searchBar setPlaceholder:@"搜索"];
+        [_searchController.searchBar setBarTintColor:DEFAULT_SEARCHBAR_COLOR];
+        [_searchController.searchBar sizeToFit];
+        [_searchController.searchBar setDelegate:self];
+        [_searchController.searchBar.layer setBorderWidth:0.5f];
+        [_searchController.searchBar.layer setBorderColor:LYColor(220, 220, 220, 1.0).CGColor];
+    }
+    return _searchController;
+}
 
 @end

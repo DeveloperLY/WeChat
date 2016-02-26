@@ -48,6 +48,7 @@
 		CDD05AE81C7B6AAD0022BD65 /* UIImage+LY.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD05AE71C7B6AAD0022BD65 /* UIImage+LY.m */; };
 		CDE74A3B1C80999B0082335D /* gy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDE74A3A1C80999B0082335D /* gy.jpg */; };
 		CDE74A3E1C809A3E0082335D /* LYDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE74A3D1C809A3E0082335D /* LYDataHelper.m */; };
+		CDE74A411C80A1650082335D /* LYWeChatSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE74A401C80A1650082335D /* LYWeChatSearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +144,8 @@
 		CDE74A3A1C80999B0082335D /* gy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gy.jpg; sourceTree = "<group>"; };
 		CDE74A3C1C809A3E0082335D /* LYDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYDataHelper.h; sourceTree = "<group>"; };
 		CDE74A3D1C809A3E0082335D /* LYDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYDataHelper.m; sourceTree = "<group>"; };
+		CDE74A3F1C80A1650082335D /* LYWeChatSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYWeChatSearchViewController.h; sourceTree = "<group>"; };
+		CDE74A401C80A1650082335D /* LYWeChatSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYWeChatSearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,8 @@
 			children = (
 				CD4142561C80001500ADD5F6 /* LYBaseTableViewController.h */,
 				CD4142571C80001500ADD5F6 /* LYBaseTableViewController.m */,
+				CDE74A3F1C80A1650082335D /* LYWeChatSearchViewController.h */,
+				CDE74A401C80A1650082335D /* LYWeChatSearchViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -698,6 +703,7 @@
 				CDD05AD71C7B68FB0022BD65 /* LYWeChatViewController.m in Sources */,
 				CDD05A951C7B62230022BD65 /* main.m in Sources */,
 				CDD05AE41C7B69750022BD65 /* LYMeViewController.m in Sources */,
+				CDE74A411C80A1650082335D /* LYWeChatSearchViewController.m in Sources */,
 				CDE74A3E1C809A3E0082335D /* LYDataHelper.m in Sources */,
 				CDD05AE11C7B69670022BD65 /* LYDiscoverViewController.m in Sources */,
 				CDA96F851C7C548900E76D94 /* LYConversation.m in Sources */,

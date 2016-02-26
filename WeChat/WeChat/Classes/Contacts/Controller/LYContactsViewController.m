@@ -15,6 +15,8 @@
 #import "LYFriendCell.h"
 #import "LYFriendHeaderView.h"
 
+#import "LYWeChatSearchViewController.h"
+
 static NSString * const cellID = @"friendCell";
 static NSString * const headerID = @"friendHeader";
 
@@ -29,6 +31,9 @@ static NSString * const headerID = @"friendHeader";
 @property (nonatomic, strong) UISearchController *searchController;
 /** 尾部Label */
 @property (nonatomic, strong) UILabel *footerLabel;
+
+
+@property (nonatomic, strong) LYWeChatSearchViewController *searchVC;
 
 @end
 
@@ -136,6 +141,7 @@ static NSString * const headerID = @"friendHeader";
 
 #pragma mark - UISearchBarDelegate
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+    self.searchVC.friendsArray = self.friendsArray;
     [self.tabBarController.tabBar setHidden:YES];
 }
 
@@ -221,6 +227,26 @@ static NSString * const headerID = @"friendHeader";
         _footerLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _footerLabel;
+}
+
+- (LYWeChatSearchViewController *)searchVC {
+    if (!_searchVC) {
+        _searchVC = [[LYWeChatSearchViewController alloc] init];
+    }
+    return _searchVC;
+}
+- (UISearchController *)searchController {
+    if (!_searchController) {
+        _searchController = [[UISearchController alloc] initWithSearchResultsController:self.searchVC];
+        [_searchController setSearchResultsUpdater: self.searchVC];
+        [_searchController.searchBar setPlaceholder:@"搜索"];
+        [_searchController.searchBar setBarTintColor:DEFAULT_SEARCHBAR_COLOR];
+        [_searchController.searchBar sizeToFit];
+        [_searchController.searchBar setDelegate:self];
+        [_searchController.searchBar.layer setBorderWidth:0.5f];
+        [_searchController.searchBar.layer setBorderColor:LYColor(220, 220, 220, 1.0).CGColor];
+    }
+    return _searchController;
 }
 
 @end
