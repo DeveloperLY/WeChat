@@ -6,8 +6,8 @@
 //  Copyright © 2016年 CoderYLiu. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "LYBaseTableViewController.h"
 
-@interface LYDiscoverViewController : UITableViewController
+@interface LYDiscoverViewController : LYBaseTableViewController
 
 @end

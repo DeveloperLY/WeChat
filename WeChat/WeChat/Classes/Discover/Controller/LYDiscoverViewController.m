@@ -8,6 +8,8 @@
 
 #import "LYDiscoverViewController.h"
 
+#import "LYUIHelper.h"
+
 @interface LYDiscoverViewController ()
 
 @end
@@ -19,6 +21,9 @@
     
     // 设置导航条
     [self setUpNavBar];
+    
+    // data
+    self.data = [LYUIHelper getDiscoverItems];
 }
 
 /**

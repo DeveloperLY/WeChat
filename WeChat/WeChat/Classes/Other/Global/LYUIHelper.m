@@ -30,6 +30,31 @@
     return items;
 }
 
++ (NSMutableArray *)getDiscoverItems {
+    NSMutableArray *items = [[NSMutableArray alloc] init];
+    LYCellItem *friendsAlbum = [LYCellItem createWithImageName:@"ff_IconShowAlbum" title:@"朋友圈" subTitle:nil rightImageName:@"2.jpg"];
+    LYCellGrounp *group1 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:friendsAlbum, nil];
+    [items addObject:group1];
+    
+    LYCellItem *qrCode = [LYCellItem createWithImageName:@"ff_IconQRCode" title:@"扫一扫"];
+    LYCellItem *shake = [LYCellItem createWithImageName:@"ff_IconShake" title:@"摇一摇"];
+    LYCellGrounp *group2 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:qrCode, shake, nil];
+    [items addObject:group2];
+    
+    LYCellItem *loacation = [LYCellItem createWithImageName:@"ff_IconLocationService" title:@"附近的人" subTitle:nil rightImageName:@"FootStep"];
+    loacation.rightImageHeightOfCell = 0.43;
+    LYCellItem *bottle = [LYCellItem createWithImageName:@"ff_IconBottle" title:@"漂流瓶"];
+    LYCellGrounp *group3 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:loacation, bottle, nil];
+    [items addObject:group3];
+    
+    LYCellItem *shopping = [LYCellItem createWithImageName:@"CreditCard_ShoppingBag" title:@"购物"];
+    LYCellItem *game = [LYCellItem createWithImageName:@"MoreGame" title:@"游戏" subTitle:@"超火力新枪战" rightImageName:@"game_tag_icon"];
+    LYCellGrounp *group4 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:shopping, game, nil];
+    [items addObject:group4];
+    
+    return items;
+}
+
 + (NSMutableArray *)getMineDetailVCItems {
     NSMutableArray *items = [[NSMutableArray alloc] init];
     LYCellItem *avatar = [LYCellItem createWithImageName:nil title:@"头像" subTitle:nil rightImageName:@"bc.jpg"];

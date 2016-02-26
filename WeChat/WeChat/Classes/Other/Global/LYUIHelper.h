@@ -10,7 +10,10 @@
 
 @interface LYUIHelper : NSObject
 
++ (NSMutableArray *)getDiscoverItems;
+
 + (NSMutableArray *)getMineVCItems;
 
 + (NSMutableArray *)getMineDetailVCItems;
+
 @end
