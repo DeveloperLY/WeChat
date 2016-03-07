@@ -64,6 +64,34 @@
     return items;
 }
 
++ (NSMutableArray *)getDetailVCItems {
+    NSMutableArray *items = [[NSMutableArray alloc] init];
+    LYCellItem *tag = [LYCellItem createWithTitle:@"设置备注和标签"];
+    LYCellItem *phone = [LYCellItem createWithTitle:@"电话号码" subTitle:@"18888888888"];
+    phone.alignment = LYCellItemAlignmentLeft;
+    LYCellGrounp *group1 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:tag, phone, nil];
+    [items addObject:group1];
+    LYCellItem *position = [LYCellItem createWithTitle:@"地区" subTitle:@"广东 珠海"];
+    position.alignment = LYCellItemAlignmentLeft;
+    LYCellItem *album = [LYCellItem createWithTitle:@"个人相册"];
+    album.subImages = @[@"1.jpg", @"2.jpg", @"8.jpg", @"0.jpg"];
+    album.alignment = LYCellItemAlignmentLeft;
+    LYCellItem *more = [LYCellItem createWithTitle:@"更多"];
+    LYCellGrounp *group2 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:position, album, more, nil];
+    [items addObject:group2];
+    
+    LYCellItem *chatButton = [LYCellItem createWithTitle:@"发消息"];
+    chatButton.type = LYCellItemTypeButton;
+    LYCellItem *videoButton = [LYCellItem createWithTitle:@"视频聊天"];
+    videoButton.type = LYCellItemTypeButton;
+    videoButton.btnBGColor = [UIColor whiteColor];
+    videoButton.btnTitleColor = [UIColor blackColor];
+    LYCellGrounp *group3 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:chatButton, videoButton, nil];
+    [items addObject:group3];
+    
+    return items;
+}
+
 + (NSMutableArray *)getMineDetailVCItems {
     NSMutableArray *items = [[NSMutableArray alloc] init];
     LYCellItem *avatar = [LYCellItem createWithImageName:nil title:@"头像" subTitle:nil rightImageName:@"bc.jpg"];
@@ -82,5 +110,31 @@
     
     return items;
 }
+
++ (NSMutableArray *)getSettingVCItems {
+    NSMutableArray *items = [[NSMutableArray alloc] init];
+    LYCellItem *safe = [LYCellItem createWithImageName:nil title:@"账号和安全" middleImageName:@"ProfileLockOn" subTitle:@"已保护"];
+    LYCellGrounp *group1 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:safe, nil];
+    [items addObject:group1];
+    
+    LYCellItem *noti = [LYCellItem createWithTitle:@"新消息通知"];
+    LYCellItem *privacy = [LYCellItem createWithTitle:@"隐私"];
+    LYCellItem *normal = [LYCellItem createWithTitle:@"通用"];
+    LYCellGrounp *group2 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:noti, privacy, normal, nil];
+    [items addObject:group2];
+    
+    LYCellItem *feedBack = [LYCellItem createWithTitle:@"帮助与反馈"];
+    LYCellItem *about = [LYCellItem createWithTitle:@"关于微信"];
+    LYCellGrounp *group3 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:feedBack, about, nil];
+    [items addObject:group3];
+    
+    LYCellItem *exit = [LYCellItem createWithTitle:@"退出登陆"];
+    [exit setAlignment:LYCellItemAlignmentMiddle];
+    LYCellGrounp *group4 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:exit, nil];
+    [items addObject:group4];
+    
+    return items;
+}
+
 
 @end

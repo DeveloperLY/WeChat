@@ -123,6 +123,20 @@ static NSString * const headerID = @"friendHeader";
     return view;
 }
 
+// 拼音首字母检索
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
+    return self.section;
+}
+
+// 检索时空出搜索框
+- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
+    if(index == 0) {
+        [self.tableView scrollRectToVisible:self.searchController.searchBar.frame animated:NO];
+        return -1;
+    }
+    return index;
+}
+
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 54.5f;

@@ -10,8 +10,10 @@
 
 #import "LYConversationCell.h"
 #import "LYConversation.h"
+#import "LYUser.h"
 
 #import "LYWeChatSearchViewController.h"
+#import "LYChatViewController.h"
 
 static NSString * const ID = @"WeChatCell";
 
@@ -26,6 +28,7 @@ static NSString * const ID = @"WeChatCell";
 
 
 @property (nonatomic, strong) LYWeChatSearchViewController *searchVC;
+@property (nonatomic, strong) LYChatViewController *chatVC;
 
 @end
 
@@ -62,6 +65,7 @@ static NSString * const ID = @"WeChatCell";
     
     self.tableView.rowHeight = 63;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.backgroundColor = [UIColor whiteColor];
 }
 
 /**
@@ -130,6 +134,20 @@ static NSString * const ID = @"WeChatCell";
 }
 
 #pragma mark - <UITableViewDelegate>
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (!_chatVC) {
+        _chatVC = [[LYChatViewController alloc] init];
+    }
+    LYUser *user7 = [[LYUser alloc] init];
+    user7.username = @"项少羽";
+    user7.userID = @"xiangshaoyu";
+    user7.nickname = @"少羽";
+    user7.avatarURL = @"xsy.jpg";
+    _chatVC.user = user7;
+    [self setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:_chatVC animated:YES];
+    [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+}
 
 #pragma mark - Event Response
 - (void)navRightButtonDown {

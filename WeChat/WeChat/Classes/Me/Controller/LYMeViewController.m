@@ -8,6 +8,8 @@
 
 #import "LYMeViewController.h"
 #import "LYMeDetailViewController.h"
+#import "LYExpressionViewController.h"
+#import "LYSettingViewController.h"
 
 #import "LYCellItem.h"
 #import "LYUser.h"
@@ -100,6 +102,14 @@ static NSString * const ID = @"MineCell";
     id vc = nil;
     if (indexPath.section == 0 && indexPath.row == 0) {     // 个人信息
         vc = [[LYMeDetailViewController alloc] init];
+    } else {
+        LYCellGrounp *group = [self.data objectAtIndex:indexPath.section - 1];
+        LYCellItem *item = [group itemAtIndex:indexPath.row];
+        if ([item.title isEqualToString:@"表情"]) {
+            vc = [[LYExpressionViewController alloc] init];
+        } else if ([item.title isEqualToString:@"设置"]) {
+            vc = [[LYSettingViewController alloc] init];
+        }
     }
     if (vc != nil) {
         [self setHidesBottomBarWhenPushed:YES];

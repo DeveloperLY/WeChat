@@ -17,7 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+    [self createDefaultDocumentIfNeed];
     [application setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -49,6 +49,18 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Private Methods
+- (void)createDefaultDocumentIfNeed {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error = nil;
+    if (![fileManager isExecutableFileAtPath:PATH_CHATREC_IMAGE]) {
+        [fileManager createDirectoryAtPath:PATH_CHATREC_IMAGE withIntermediateDirectories:YES attributes:nil error:&error];
+        if (error) {
+            NSLog([self class], @"createDefaultDocumentIfNeed", error);
+        }
+    }
 }
 
 @end

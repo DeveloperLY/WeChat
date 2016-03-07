@@ -7,17 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD3A9B201C8736080073F15F /* LYChatBox.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3A9B1F1C8736080073F15F /* LYChatBox.m */; };
+		CD3A9B231C873D1F0073F15F /* LYChatBoxMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3A9B221C873D1F0073F15F /* LYChatBoxMoreView.m */; };
+		CD3A9B261C873D4E0073F15F /* LYChatBoxMoreItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3A9B251C873D4E0073F15F /* LYChatBoxMoreItem.m */; };
+		CD3A9B291C873D630073F15F /* LYChatBoxFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3A9B281C873D630073F15F /* LYChatBoxFaceView.m */; };
+		CD3A9B2C1C873D7B0073F15F /* LYChatBoxFacePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3A9B2B1C873D7B0073F15F /* LYChatBoxFacePageView.m */; };
+		CD3A9B2F1C873D9B0073F15F /* LYChatBoxFaceMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3A9B2E1C873D9B0073F15F /* LYChatBoxFaceMenuView.m */; };
+		CD3A9B321C8747250073F15F /* LYChatBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3A9B311C8747250073F15F /* LYChatBoxViewController.m */; };
+		CD3A9B351C8747EE0073F15F /* LYChatMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3A9B341C8747EE0073F15F /* LYChatMessageViewController.m */; };
 		CD4142521C7FED9300ADD5F6 /* LYUserHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4142511C7FED9300ADD5F6 /* LYUserHelper.m */; };
 		CD4142541C7FFAD600ADD5F6 /* bc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD4142531C7FFAD600ADD5F6 /* bc.jpg */; };
 		CD4142581C80001500ADD5F6 /* LYBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4142571C80001500ADD5F6 /* LYBaseTableViewController.m */; };
 		CD41425C1C80011E00ADD5F6 /* LYBaseHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD41425B1C80011E00ADD5F6 /* LYBaseHeaderFooterView.m */; };
 		CD41425F1C80013F00ADD5F6 /* LYBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD41425E1C80013F00ADD5F6 /* LYBaseCell.m */; };
+		CD5725B31C86CADA00A307B2 /* normal_face.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD5725B21C86CADA00A307B2 /* normal_face.plist */; };
+		CD5725B81C86CC7F00A307B2 /* LYMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5725B71C86CC7F00A307B2 /* LYMessage.m */; };
+		CD5725BC1C86D70600A307B2 /* LYChatHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5725BB1C86D70600A307B2 /* LYChatHelper.m */; };
+		CD5725BF1C86D77E00A307B2 /* LYFaceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5725BE1C86D77E00A307B2 /* LYFaceHelper.m */; };
+		CD5725C21C86DA6900A307B2 /* LYFace.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5725C11C86DA6900A307B2 /* LYFace.m */; };
+		CD5725C81C86DF3300A307B2 /* LYMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5725C71C86DF3300A307B2 /* LYMessageCell.m */; };
+		CD5725CB1C86E40D00A307B2 /* LYTextMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5725CA1C86E40D00A307B2 /* LYTextMessageCell.m */; };
+		CD5725CE1C86E42700A307B2 /* LYImageMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5725CD1C86E42700A307B2 /* LYImageMessageCell.m */; };
+		CD5725D11C86E43B00A307B2 /* LYVoiceMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5725D01C86E43B00A307B2 /* LYVoiceMessageCell.m */; };
+		CD5725D41C86E44E00A307B2 /* LYSystemMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5725D31C86E44E00A307B2 /* LYSystemMessageCell.m */; };
 		CD77D1CF1C802CF300767B8D /* UIDevice+LY.m in Sources */ = {isa = PBXBuildFile; fileRef = CD77D1CE1C802CF300767B8D /* UIDevice+LY.m */; };
 		CD77D1D21C80385A00767B8D /* LYMeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD77D1D11C80385A00767B8D /* LYMeDetailViewController.m */; };
 		CD77D1D61C804B1800767B8D /* LYFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD77D1D51C804B1800767B8D /* LYFriendCell.m */; };
 		CD77D1D91C804C8E00767B8D /* LYFriendHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD77D1D81C804C8E00767B8D /* LYFriendHeaderView.m */; };
 		CD784A781C7EF13D00521B39 /* LYUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CD784A771C7EF13D00521B39 /* LYUIHelper.m */; };
 		CD784A7D1C7EF3C800521B39 /* LYCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CD784A7C1C7EF3C800521B39 /* LYCellItem.m */; };
+		CDA139081C819FCC00F6946C /* LYExpressionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA139071C819FCC00F6946C /* LYExpressionViewController.m */; };
+		CDA1390D1C81A4AD00F6946C /* LYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA1390C1C81A4AD00F6946C /* LYSettingViewController.m */; };
+		CDA139101C81A5DB00F6946C /* LYNewNotiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA1390F1C81A5DB00F6946C /* LYNewNotiViewController.m */; };
+		CDA139131C81A90900F6946C /* LYChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA139121C81A90900F6946C /* LYChatViewController.m */; };
 		CDA96F851C7C548900E76D94 /* LYConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA96F841C7C548900E76D94 /* LYConversation.m */; };
 		CDA96F8A1C7C56E600E76D94 /* LYCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA96F891C7C56E600E76D94 /* LYCommonCell.m */; };
 		CDA96F8D1C7C599D00E76D94 /* UIView+LY.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA96F8C1C7C599D00E76D94 /* UIView+LY.m */; };
@@ -69,6 +91,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD3A9B1E1C8736080073F15F /* LYChatBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYChatBox.h; sourceTree = "<group>"; };
+		CD3A9B1F1C8736080073F15F /* LYChatBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYChatBox.m; sourceTree = "<group>"; };
+		CD3A9B211C873D1F0073F15F /* LYChatBoxMoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYChatBoxMoreView.h; sourceTree = "<group>"; };
+		CD3A9B221C873D1F0073F15F /* LYChatBoxMoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYChatBoxMoreView.m; sourceTree = "<group>"; };
+		CD3A9B241C873D4E0073F15F /* LYChatBoxMoreItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYChatBoxMoreItem.h; sourceTree = "<group>"; };
+		CD3A9B251C873D4E0073F15F /* LYChatBoxMoreItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYChatBoxMoreItem.m; sourceTree = "<group>"; };
+		CD3A9B271C873D630073F15F /* LYChatBoxFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYChatBoxFaceView.h; sourceTree = "<group>"; };
+		CD3A9B281C873D630073F15F /* LYChatBoxFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYChatBoxFaceView.m; sourceTree = "<group>"; };
+		CD3A9B2A1C873D7B0073F15F /* LYChatBoxFacePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYChatBoxFacePageView.h; sourceTree = "<group>"; };
+		CD3A9B2B1C873D7B0073F15F /* LYChatBoxFacePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYChatBoxFacePageView.m; sourceTree = "<group>"; };
+		CD3A9B2D1C873D9B0073F15F /* LYChatBoxFaceMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYChatBoxFaceMenuView.h; sourceTree = "<group>"; };
+		CD3A9B2E1C873D9B0073F15F /* LYChatBoxFaceMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYChatBoxFaceMenuView.m; sourceTree = "<group>"; };
+		CD3A9B301C8747250073F15F /* LYChatBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYChatBoxViewController.h; sourceTree = "<group>"; };
+		CD3A9B311C8747250073F15F /* LYChatBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYChatBoxViewController.m; sourceTree = "<group>"; };
+		CD3A9B331C8747EE0073F15F /* LYChatMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYChatMessageViewController.h; sourceTree = "<group>"; };
+		CD3A9B341C8747EE0073F15F /* LYChatMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYChatMessageViewController.m; sourceTree = "<group>"; };
 		CD4142501C7FED9300ADD5F6 /* LYUserHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYUserHelper.h; sourceTree = "<group>"; };
 		CD4142511C7FED9300ADD5F6 /* LYUserHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYUserHelper.m; sourceTree = "<group>"; };
 		CD4142531C7FFAD600ADD5F6 /* bc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bc.jpg; sourceTree = "<group>"; };
@@ -78,6 +116,25 @@
 		CD41425B1C80011E00ADD5F6 /* LYBaseHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYBaseHeaderFooterView.m; sourceTree = "<group>"; };
 		CD41425D1C80013F00ADD5F6 /* LYBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYBaseCell.h; sourceTree = "<group>"; };
 		CD41425E1C80013F00ADD5F6 /* LYBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYBaseCell.m; sourceTree = "<group>"; };
+		CD5725B21C86CADA00A307B2 /* normal_face.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = normal_face.plist; sourceTree = "<group>"; };
+		CD5725B61C86CC7F00A307B2 /* LYMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYMessage.h; sourceTree = "<group>"; };
+		CD5725B71C86CC7F00A307B2 /* LYMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYMessage.m; sourceTree = "<group>"; };
+		CD5725BA1C86D70600A307B2 /* LYChatHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYChatHelper.h; sourceTree = "<group>"; };
+		CD5725BB1C86D70600A307B2 /* LYChatHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYChatHelper.m; sourceTree = "<group>"; };
+		CD5725BD1C86D77E00A307B2 /* LYFaceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYFaceHelper.h; sourceTree = "<group>"; };
+		CD5725BE1C86D77E00A307B2 /* LYFaceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYFaceHelper.m; sourceTree = "<group>"; };
+		CD5725C01C86DA6900A307B2 /* LYFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYFace.h; sourceTree = "<group>"; };
+		CD5725C11C86DA6900A307B2 /* LYFace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYFace.m; sourceTree = "<group>"; };
+		CD5725C61C86DF3300A307B2 /* LYMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYMessageCell.h; sourceTree = "<group>"; };
+		CD5725C71C86DF3300A307B2 /* LYMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYMessageCell.m; sourceTree = "<group>"; };
+		CD5725C91C86E40D00A307B2 /* LYTextMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTextMessageCell.h; sourceTree = "<group>"; };
+		CD5725CA1C86E40D00A307B2 /* LYTextMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTextMessageCell.m; sourceTree = "<group>"; };
+		CD5725CC1C86E42700A307B2 /* LYImageMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYImageMessageCell.h; sourceTree = "<group>"; };
+		CD5725CD1C86E42700A307B2 /* LYImageMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYImageMessageCell.m; sourceTree = "<group>"; };
+		CD5725CF1C86E43B00A307B2 /* LYVoiceMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYVoiceMessageCell.h; sourceTree = "<group>"; };
+		CD5725D01C86E43B00A307B2 /* LYVoiceMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYVoiceMessageCell.m; sourceTree = "<group>"; };
+		CD5725D21C86E44D00A307B2 /* LYSystemMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSystemMessageCell.h; sourceTree = "<group>"; };
+		CD5725D31C86E44E00A307B2 /* LYSystemMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSystemMessageCell.m; sourceTree = "<group>"; };
 		CD77D1CD1C802CF300767B8D /* UIDevice+LY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+LY.h"; sourceTree = "<group>"; };
 		CD77D1CE1C802CF300767B8D /* UIDevice+LY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+LY.m"; sourceTree = "<group>"; };
 		CD77D1D01C80385A00767B8D /* LYMeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYMeDetailViewController.h; sourceTree = "<group>"; };
@@ -90,6 +147,14 @@
 		CD784A771C7EF13D00521B39 /* LYUIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYUIHelper.m; sourceTree = "<group>"; };
 		CD784A7B1C7EF3C800521B39 /* LYCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCellItem.h; sourceTree = "<group>"; };
 		CD784A7C1C7EF3C800521B39 /* LYCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCellItem.m; sourceTree = "<group>"; };
+		CDA139061C819FCC00F6946C /* LYExpressionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYExpressionViewController.h; sourceTree = "<group>"; };
+		CDA139071C819FCC00F6946C /* LYExpressionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYExpressionViewController.m; sourceTree = "<group>"; };
+		CDA1390B1C81A4AD00F6946C /* LYSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSettingViewController.h; sourceTree = "<group>"; };
+		CDA1390C1C81A4AD00F6946C /* LYSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSettingViewController.m; sourceTree = "<group>"; };
+		CDA1390E1C81A5DB00F6946C /* LYNewNotiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYNewNotiViewController.h; sourceTree = "<group>"; };
+		CDA1390F1C81A5DB00F6946C /* LYNewNotiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYNewNotiViewController.m; sourceTree = "<group>"; };
+		CDA139111C81A90900F6946C /* LYChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYChatViewController.h; sourceTree = "<group>"; };
+		CDA139121C81A90900F6946C /* LYChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYChatViewController.m; sourceTree = "<group>"; };
 		CDA96F831C7C548900E76D94 /* LYConversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYConversation.h; sourceTree = "<group>"; };
 		CDA96F841C7C548900E76D94 /* LYConversation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYConversation.m; sourceTree = "<group>"; };
 		CDA96F881C7C56E600E76D94 /* LYCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCommonCell.h; sourceTree = "<group>"; };
@@ -176,6 +241,7 @@
 		CD3406FB1C7EE80D00E0DF69 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CDA139091C81A43300F6946C /* Setting */,
 				CD784A791C7EF38600521B39 /* Base */,
 				CDD05AD21C7B67E50022BD65 /* Contacts */,
 				CDD05AD31C7B68140022BD65 /* Discover */,
@@ -209,6 +275,53 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		CD5725B41C86CC3000A307B2 /* InputBox */ = {
+			isa = PBXGroup;
+			children = (
+				CD3A9B1E1C8736080073F15F /* LYChatBox.h */,
+				CD3A9B1F1C8736080073F15F /* LYChatBox.m */,
+				CD3A9B211C873D1F0073F15F /* LYChatBoxMoreView.h */,
+				CD3A9B221C873D1F0073F15F /* LYChatBoxMoreView.m */,
+				CD3A9B241C873D4E0073F15F /* LYChatBoxMoreItem.h */,
+				CD3A9B251C873D4E0073F15F /* LYChatBoxMoreItem.m */,
+				CD3A9B271C873D630073F15F /* LYChatBoxFaceView.h */,
+				CD3A9B281C873D630073F15F /* LYChatBoxFaceView.m */,
+				CD3A9B2A1C873D7B0073F15F /* LYChatBoxFacePageView.h */,
+				CD3A9B2B1C873D7B0073F15F /* LYChatBoxFacePageView.m */,
+				CD3A9B2D1C873D9B0073F15F /* LYChatBoxFaceMenuView.h */,
+				CD3A9B2E1C873D9B0073F15F /* LYChatBoxFaceMenuView.m */,
+			);
+			name = InputBox;
+			sourceTree = "<group>";
+		};
+		CD5725B51C86CC4400A307B2 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				CD5725C61C86DF3300A307B2 /* LYMessageCell.h */,
+				CD5725C71C86DF3300A307B2 /* LYMessageCell.m */,
+				CD5725C91C86E40D00A307B2 /* LYTextMessageCell.h */,
+				CD5725CA1C86E40D00A307B2 /* LYTextMessageCell.m */,
+				CD5725CC1C86E42700A307B2 /* LYImageMessageCell.h */,
+				CD5725CD1C86E42700A307B2 /* LYImageMessageCell.m */,
+				CD5725CF1C86E43B00A307B2 /* LYVoiceMessageCell.h */,
+				CD5725D01C86E43B00A307B2 /* LYVoiceMessageCell.m */,
+				CD5725D21C86E44D00A307B2 /* LYSystemMessageCell.h */,
+				CD5725D31C86E44E00A307B2 /* LYSystemMessageCell.m */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		CD5725B91C86D6D900A307B2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CD5725BA1C86D70600A307B2 /* LYChatHelper.h */,
+				CD5725BB1C86D70600A307B2 /* LYChatHelper.m */,
+				CD5725BD1C86D77E00A307B2 /* LYFaceHelper.h */,
+				CD5725BE1C86D77E00A307B2 /* LYFaceHelper.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		CD77D1D31C8049EC00767B8D /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +352,34 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		CDA139091C81A43300F6946C /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				CDA1390A1C81A43D00F6946C /* Controller */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		CDA1390A1C81A43D00F6946C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CDA1390B1C81A4AD00F6946C /* LYSettingViewController.h */,
+				CDA1390C1C81A4AD00F6946C /* LYSettingViewController.m */,
+				CDA1390E1C81A5DB00F6946C /* LYNewNotiViewController.h */,
+				CDA1390F1C81A5DB00F6946C /* LYNewNotiViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CDA139141C81AE7700F6946C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD5725B51C86CC4400A307B2 /* Message */,
+				CD5725B41C86CC3000A307B2 /* InputBox */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		CDA96F7E1C7C53B200E76D94 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +395,10 @@
 			children = (
 				CDA96F831C7C548900E76D94 /* LYConversation.h */,
 				CDA96F841C7C548900E76D94 /* LYConversation.m */,
+				CD5725B61C86CC7F00A307B2 /* LYMessage.h */,
+				CD5725B71C86CC7F00A307B2 /* LYMessage.m */,
+				CD5725C01C86DA6900A307B2 /* LYFace.h */,
+				CD5725C11C86DA6900A307B2 /* LYFace.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +423,7 @@
 		CDAFE2211C7CA34300C8FB91 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CD5725B21C86CADA00A307B2 /* normal_face.plist */,
 				CDAFE2221C7CA36200C8FB91 /* images */,
 			);
 			path = Resources;
@@ -435,6 +581,8 @@
 		CDD05AD11C7B677F0022BD65 /* WeChat */ = {
 			isa = PBXGroup;
 			children = (
+				CD5725B91C86D6D900A307B2 /* Helper */,
+				CDA139141C81AE7700F6946C /* View */,
 				CDD05AD81C7B69020022BD65 /* Controller */,
 				CDA96F821C7C546500E76D94 /* Model */,
 				CDA96F7E1C7C53B200E76D94 /* View */,
@@ -475,6 +623,12 @@
 			children = (
 				CDD05AD51C7B68FB0022BD65 /* LYWeChatViewController.h */,
 				CDD05AD61C7B68FB0022BD65 /* LYWeChatViewController.m */,
+				CDA139111C81A90900F6946C /* LYChatViewController.h */,
+				CDA139121C81A90900F6946C /* LYChatViewController.m */,
+				CD3A9B301C8747250073F15F /* LYChatBoxViewController.h */,
+				CD3A9B311C8747250073F15F /* LYChatBoxViewController.m */,
+				CD3A9B331C8747EE0073F15F /* LYChatMessageViewController.h */,
+				CD3A9B341C8747EE0073F15F /* LYChatMessageViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -504,6 +658,8 @@
 				CDD05AE31C7B69750022BD65 /* LYMeViewController.m */,
 				CD77D1D01C80385A00767B8D /* LYMeDetailViewController.h */,
 				CD77D1D11C80385A00767B8D /* LYMeDetailViewController.m */,
+				CDA139061C819FCC00F6946C /* LYExpressionViewController.h */,
+				CDA139071C819FCC00F6946C /* LYExpressionViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -649,6 +805,7 @@
 				CDD05AA01C7B62230022BD65 /* Assets.xcassets in Resources */,
 				CDAFE23D1C7CA7D700C8FB91 /* LYConversationCell.xib in Resources */,
 				CDAFE22E1C7CA4DC00C8FB91 /* wz.jpg in Resources */,
+				CD5725B31C86CADA00A307B2 /* normal_face.plist in Resources */,
 				CDAFE22C1C7CA48400C8FB91 /* ssm.jpg in Resources */,
 				CDAFE2281C7CA46300C8FB91 /* sym.jpg in Resources */,
 				CDAFE2241C7CA44500C8FB91 /* xsy.jpg in Resources */,
@@ -681,17 +838,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDD05AE81C7B6AAD0022BD65 /* UIImage+LY.m in Sources */,
+				CD3A9B2C1C873D7B0073F15F /* LYChatBoxFacePageView.m in Sources */,
 				CD784A7D1C7EF3C800521B39 /* LYCellItem.m in Sources */,
 				CDAFE23C1C7CA7D700C8FB91 /* LYConversationCell.m in Sources */,
+				CD5725C21C86DA6900A307B2 /* LYFace.m in Sources */,
+				CD3A9B351C8747EE0073F15F /* LYChatMessageViewController.m in Sources */,
+				CDA139101C81A5DB00F6946C /* LYNewNotiViewController.m in Sources */,
 				CD77D1CF1C802CF300767B8D /* UIDevice+LY.m in Sources */,
 				CDD05AD01C7B67380022BD65 /* LYNavigationController.m in Sources */,
+				CD5725D11C86E43B00A307B2 /* LYVoiceMessageCell.m in Sources */,
+				CD5725BF1C86D77E00A307B2 /* LYFaceHelper.m in Sources */,
+				CD5725CE1C86E42700A307B2 /* LYImageMessageCell.m in Sources */,
 				CDD05ADE1C7B69530022BD65 /* LYContactsViewController.m in Sources */,
 				CD77D1D91C804C8E00767B8D /* LYFriendHeaderView.m in Sources */,
 				CD77D1D61C804B1800767B8D /* LYFriendCell.m in Sources */,
 				CD77D1D21C80385A00767B8D /* LYMeDetailViewController.m in Sources */,
 				CDAFE24E1C7CC87300C8FB91 /* LYUserDetailCell.m in Sources */,
+				CD3A9B2F1C873D9B0073F15F /* LYChatBoxFaceMenuView.m in Sources */,
+				CD3A9B321C8747250073F15F /* LYChatBoxViewController.m in Sources */,
 				CDA96F8D1C7C599D00E76D94 /* UIView+LY.m in Sources */,
 				CDA96F8A1C7C56E600E76D94 /* LYCommonCell.m in Sources */,
+				CD3A9B231C873D1F0073F15F /* LYChatBoxMoreView.m in Sources */,
+				CD3A9B261C873D4E0073F15F /* LYChatBoxMoreItem.m in Sources */,
 				CD4142521C7FED9300ADD5F6 /* LYUserHelper.m in Sources */,
 				CD4142581C80001500ADD5F6 /* LYBaseTableViewController.m in Sources */,
 				CDD05A981C7B62230022BD65 /* AppDelegate.m in Sources */,
@@ -700,14 +868,24 @@
 				CD41425F1C80013F00ADD5F6 /* LYBaseCell.m in Sources */,
 				CD784A781C7EF13D00521B39 /* LYUIHelper.m in Sources */,
 				CD41425C1C80011E00ADD5F6 /* LYBaseHeaderFooterView.m in Sources */,
+				CDA139131C81A90900F6946C /* LYChatViewController.m in Sources */,
+				CDA1390D1C81A4AD00F6946C /* LYSettingViewController.m in Sources */,
 				CDD05AD71C7B68FB0022BD65 /* LYWeChatViewController.m in Sources */,
+				CD5725BC1C86D70600A307B2 /* LYChatHelper.m in Sources */,
+				CD3A9B291C873D630073F15F /* LYChatBoxFaceView.m in Sources */,
 				CDD05A951C7B62230022BD65 /* main.m in Sources */,
 				CDD05AE41C7B69750022BD65 /* LYMeViewController.m in Sources */,
+				CD5725D41C86E44E00A307B2 /* LYSystemMessageCell.m in Sources */,
 				CDE74A411C80A1650082335D /* LYWeChatSearchViewController.m in Sources */,
 				CDE74A3E1C809A3E0082335D /* LYDataHelper.m in Sources */,
 				CDD05AE11C7B69670022BD65 /* LYDiscoverViewController.m in Sources */,
+				CD5725B81C86CC7F00A307B2 /* LYMessage.m in Sources */,
+				CD3A9B201C8736080073F15F /* LYChatBox.m in Sources */,
 				CDA96F851C7C548900E76D94 /* LYConversation.m in Sources */,
+				CDA139081C819FCC00F6946C /* LYExpressionViewController.m in Sources */,
 				CDAFE2441C7CBDC600C8FB91 /* LYUser.m in Sources */,
+				CD5725C81C86DF3300A307B2 /* LYMessageCell.m in Sources */,
+				CD5725CB1C86E40D00A307B2 /* LYTextMessageCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

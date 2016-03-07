@@ -19,4 +19,13 @@
  */
 + (UIImage *)imageWithOriginalImageName:(NSString *)imageName;
 
+/**
+ *  根据颜色生成图片
+ *
+ *  @param color 颜色
+ *
+ *  @return 图片
+ */
++ (UIImage *)imageWithColor:(UIColor *)color;
+
 @end
