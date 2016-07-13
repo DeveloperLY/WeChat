@@ -136,5 +136,72 @@
     return items;
 }
 
++ (NSMutableArray *)getDetailSettingVCItems {
+    NSMutableArray *items = [[NSMutableArray alloc] init];
+    
+    LYCellItem *tag = [LYCellItem createWithTitle:@"设置备注及标签"];
+    LYCellGrounp *group1 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:tag, nil];
+    [items addObject:group1];
+    
+    LYCellItem *recommend = [LYCellItem createWithTitle:@"把他推荐给好友"];
+    LYCellGrounp *group2 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:recommend, nil];
+    [items addObject:group2];
+    
+    LYCellItem *starFriend = [LYCellItem createWithTitle:@"把它设为星标朋友"];
+    starFriend.type = LYCellItemTypeSwitch;
+    LYCellGrounp *group3 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:starFriend, nil];
+    [items addObject:group3];
+    
+    LYCellItem *prohibit = [LYCellItem createWithTitle:@"不让他看我的朋友圈"];
+    prohibit.type = LYCellItemTypeSwitch;
+    LYCellItem *ignore = [LYCellItem createWithTitle:@"不看他的朋友圈"];
+    ignore.type = LYCellItemTypeSwitch;
+    LYCellGrounp *group4 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:prohibit, ignore, nil];
+    [items addObject:group4];
+    
+    LYCellItem *addBlacklist = [LYCellItem createWithTitle:@"加入黑名单"];
+    addBlacklist.type = LYCellItemTypeSwitch;
+    LYCellItem *report = [LYCellItem createWithTitle: @"举报"];
+    LYCellGrounp *group5 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:addBlacklist, report, nil];
+    [items addObject:group5];
+    
+    LYCellItem *delete = [LYCellItem createWithTitle:@"删除好友"];
+    delete.type = LYCellItemTypeButton;
+    LYCellGrounp *group6 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:delete, nil];
+    [items addObject:group6];
+    
+    return items;
+}
+
++ (NSMutableArray *)getNewNotiVCItems {
+    NSMutableArray *items = [[NSMutableArray alloc] init];
+    
+    LYCellItem *recNoti = [LYCellItem createWithTitle:@"接受新消息通知" subTitle:@"已开启"];
+    LYCellGrounp *group1 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:@"如果你要关闭或开启微信的新消息通知，请在iPhone的“设置” - “通知”功能中，找到应用程序“微信”更改。" cellItems:recNoti, nil];
+    [items addObject:group1];
+    
+    LYCellItem *showDetail = [LYCellItem createWithTitle:@"通知显示详情信息"];
+    showDetail.type = LYCellItemTypeSwitch;
+    LYCellGrounp *group2 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:@"关闭后，当收到微信消息时，通知提示将不显示发信人和内容摘要。" cellItems:showDetail, nil];
+    [items addObject:group2];
+    
+    LYCellItem *disturb = [LYCellItem createWithTitle:@"功能消息免打扰"];
+    LYCellGrounp *group3 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:@"设置系统功能消息提示声音和振动时段。" cellItems:disturb, nil];
+    [items addObject:group3];
+    
+    LYCellItem *voice = [LYCellItem createWithTitle:@"声音"];
+    voice.type = LYCellItemTypeSwitch;
+    LYCellItem *shake = [LYCellItem createWithTitle:@"震动"];
+    shake.type = LYCellItemTypeSwitch;
+    LYCellGrounp *group4 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:@"当微信在运行时，你可以设置是否需要声音或者振动。" cellItems:voice, shake, nil];
+    [items addObject:group4];
+    
+    LYCellItem *friends = [LYCellItem createWithTitle:@"朋友圈照片更新"];
+    friends.type = LYCellItemTypeSwitch;
+    LYCellGrounp *group5 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:@"关闭后，有朋友更新照片时，界面下面的“发现”切换按钮上不再出现红点提示。" cellItems:friends, nil];
+    [items addObject:group5];
+    
+    return items;
+}
 
 @end
