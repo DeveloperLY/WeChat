@@ -757,7 +757,7 @@
 			attributes = {
 				CLASSPREFIX = LY;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = CoderYLiu;
+				ORGANIZATIONNAME = DeveloperLY;
 				TargetAttributes = {
 					CDD05A8F1C7B62230022BD65 = {
 						CreatedOnToolsVersion = 7.2;
@@ -1030,7 +1030,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WeChat/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "WeChat/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CoderYLiu.WeChat;
+				PRODUCT_BUNDLE_IDENTIFIER = net.developerly.WeChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1043,7 +1043,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WeChat/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "WeChat/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CoderYLiu.WeChat;
+				PRODUCT_BUNDLE_IDENTIFIER = net.developerly.WeChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
