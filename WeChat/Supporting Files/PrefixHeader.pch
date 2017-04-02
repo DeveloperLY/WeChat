@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  WeChat
+//
+//  Created by Y Liu on 16/2/23.
+//  Copyright © 2016年 DeveloperLY. All rights reserved.
+//
+
+#ifndef WeChat_PrefixHeader_pch
+#define WeChat_PrefixHeader_pch
+
+// 环信
+#import <Hyphenate/Hyphenate.h>
+
+#import "Macros.h"
+
+/** ----- Category ----- */
+#import "UIImage+LY.h"
+#import "UIView+LY.h"
+#import "NSString+LY.h"
+#import "UIDevice+LY.h"
+
+#endif /* WeChat_PrefixHeader_pch */
