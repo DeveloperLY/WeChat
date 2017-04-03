@@ -197,7 +197,7 @@
 		CDD05A961C7B62230022BD65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CDD05A971C7B62230022BD65 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CDD05A9D1C7B62230022BD65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CDD05A9F1C7B62230022BD65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Supporting Files/Assets.xcassets"; sourceTree = "<group>"; };
+		CDD05A9F1C7B62230022BD65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDD05AA21C7B62230022BD65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDD05AA41C7B62230022BD65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDD05AA91C7B62230022BD65 /* WeChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -266,13 +266,13 @@
 		CD3406FB1C7EE80D00E0DF69 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CDA139091C81A43300F6946C /* Setting */,
 				CD784A791C7EF38600521B39 /* Base */,
 				CDD05AD21C7B67E50022BD65 /* Contacts */,
 				CDD05AD31C7B68140022BD65 /* Discover */,
 				CDD05AC61C7B62E50022BD65 /* Main */,
 				CDD05AD41C7B681A0022BD65 /* Me */,
 				CDD05AC71C7B65A40022BD65 /* Other */,
+				CDA139091C81A43300F6946C /* Setting */,
 				CDD05AD11C7B677F0022BD65 /* WeChat */,
 			);
 			path = Classes;
@@ -283,7 +283,7 @@
 			children = (
 				CDD05A9F1C7B62230022BD65 /* Assets.xcassets */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		CD4142551C7FFFD400ADD5F6 /* Controller */ = {
@@ -294,18 +294,18 @@
 				CDE74A3F1C80A1650082335D /* LYWeChatSearchViewController.h */,
 				CDE74A401C80A1650082335D /* LYWeChatSearchViewController.m */,
 			);
-			name = Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		CD4142591C80009600ADD5F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CD41425A1C80011E00ADD5F6 /* LYBaseHeaderFooterView.h */,
-				CD41425B1C80011E00ADD5F6 /* LYBaseHeaderFooterView.m */,
 				CD41425D1C80013F00ADD5F6 /* LYBaseCell.h */,
 				CD41425E1C80013F00ADD5F6 /* LYBaseCell.m */,
+				CD41425A1C80011E00ADD5F6 /* LYBaseHeaderFooterView.h */,
+				CD41425B1C80011E00ADD5F6 /* LYBaseHeaderFooterView.m */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		CD5725B41C86CC3000A307B2 /* InputBox */ = {
@@ -313,35 +313,35 @@
 			children = (
 				CD3A9B1E1C8736080073F15F /* LYChatBox.h */,
 				CD3A9B1F1C8736080073F15F /* LYChatBox.m */,
-				CD3A9B211C873D1F0073F15F /* LYChatBoxMoreView.h */,
-				CD3A9B221C873D1F0073F15F /* LYChatBoxMoreView.m */,
-				CD3A9B241C873D4E0073F15F /* LYChatBoxMoreItem.h */,
-				CD3A9B251C873D4E0073F15F /* LYChatBoxMoreItem.m */,
-				CD3A9B271C873D630073F15F /* LYChatBoxFaceView.h */,
-				CD3A9B281C873D630073F15F /* LYChatBoxFaceView.m */,
-				CD3A9B2A1C873D7B0073F15F /* LYChatBoxFacePageView.h */,
-				CD3A9B2B1C873D7B0073F15F /* LYChatBoxFacePageView.m */,
 				CD3A9B2D1C873D9B0073F15F /* LYChatBoxFaceMenuView.h */,
 				CD3A9B2E1C873D9B0073F15F /* LYChatBoxFaceMenuView.m */,
+				CD3A9B2A1C873D7B0073F15F /* LYChatBoxFacePageView.h */,
+				CD3A9B2B1C873D7B0073F15F /* LYChatBoxFacePageView.m */,
+				CD3A9B271C873D630073F15F /* LYChatBoxFaceView.h */,
+				CD3A9B281C873D630073F15F /* LYChatBoxFaceView.m */,
+				CD3A9B241C873D4E0073F15F /* LYChatBoxMoreItem.h */,
+				CD3A9B251C873D4E0073F15F /* LYChatBoxMoreItem.m */,
+				CD3A9B211C873D1F0073F15F /* LYChatBoxMoreView.h */,
+				CD3A9B221C873D1F0073F15F /* LYChatBoxMoreView.m */,
 			);
-			name = InputBox;
+			path = InputBox;
 			sourceTree = "<group>";
 		};
 		CD5725B51C86CC4400A307B2 /* Message */ = {
 			isa = PBXGroup;
 			children = (
-				CD5725C61C86DF3300A307B2 /* LYMessageCell.h */,
-				CD5725C71C86DF3300A307B2 /* LYMessageCell.m */,
-				CD5725C91C86E40D00A307B2 /* LYTextMessageCell.h */,
-				CD5725CA1C86E40D00A307B2 /* LYTextMessageCell.m */,
 				CD5725CC1C86E42700A307B2 /* LYImageMessageCell.h */,
 				CD5725CD1C86E42700A307B2 /* LYImageMessageCell.m */,
-				CD5725CF1C86E43B00A307B2 /* LYVoiceMessageCell.h */,
-				CD5725D01C86E43B00A307B2 /* LYVoiceMessageCell.m */,
+				CD5725C61C86DF3300A307B2 /* LYMessageCell.h */,
+				CD5725C71C86DF3300A307B2 /* LYMessageCell.m */,
 				CD5725D21C86E44D00A307B2 /* LYSystemMessageCell.h */,
 				CD5725D31C86E44E00A307B2 /* LYSystemMessageCell.m */,
+				CD5725C91C86E40D00A307B2 /* LYTextMessageCell.h */,
+				CD5725CA1C86E40D00A307B2 /* LYTextMessageCell.m */,
+				CD5725CF1C86E43B00A307B2 /* LYVoiceMessageCell.h */,
+				CD5725D01C86E43B00A307B2 /* LYVoiceMessageCell.m */,
 			);
-			name = Message;
+			path = Message;
 			sourceTree = "<group>";
 		};
 		CD5725B91C86D6D900A307B2 /* Helper */ = {
@@ -352,7 +352,7 @@
 				CD5725BD1C86D77E00A307B2 /* LYFaceHelper.h */,
 				CD5725BE1C86D77E00A307B2 /* LYFaceHelper.m */,
 			);
-			name = Helper;
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		CD77D1D31C8049EC00767B8D /* View */ = {
@@ -363,15 +363,15 @@
 				CD77D1D71C804C8E00767B8D /* LYFriendHeaderView.h */,
 				CD77D1D81C804C8E00767B8D /* LYFriendHeaderView.m */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		CD784A791C7EF38600521B39 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				CD4142591C80009600ADD5F6 /* View */,
 				CD4142551C7FFFD400ADD5F6 /* Controller */,
 				CD784A7A1C7EF39200521B39 /* Model */,
+				CD4142591C80009600ADD5F6 /* View */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -390,27 +390,27 @@
 			children = (
 				CDA1390A1C81A43D00F6946C /* Controller */,
 			);
-			name = Setting;
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		CDA1390A1C81A43D00F6946C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CDA1390B1C81A4AD00F6946C /* LYSettingViewController.h */,
-				CDA1390C1C81A4AD00F6946C /* LYSettingViewController.m */,
 				CDA1390E1C81A5DB00F6946C /* LYNewNotiViewController.h */,
 				CDA1390F1C81A5DB00F6946C /* LYNewNotiViewController.m */,
+				CDA1390B1C81A4AD00F6946C /* LYSettingViewController.h */,
+				CDA1390C1C81A4AD00F6946C /* LYSettingViewController.m */,
 			);
-			name = Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		CDA139141C81AE7700F6946C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CD5725B51C86CC4400A307B2 /* Message */,
 				CD5725B41C86CC3000A307B2 /* InputBox */,
+				CD5725B51C86CC4400A307B2 /* Message */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		CDA96F7E1C7C53B200E76D94 /* View */ = {
@@ -428,10 +428,10 @@
 			children = (
 				CDA96F831C7C548900E76D94 /* LYConversation.h */,
 				CDA96F841C7C548900E76D94 /* LYConversation.m */,
-				CD5725B61C86CC7F00A307B2 /* LYMessage.h */,
-				CD5725B71C86CC7F00A307B2 /* LYMessage.m */,
 				CD5725C01C86DA6900A307B2 /* LYFace.h */,
 				CD5725C11C86DA6900A307B2 /* LYFace.m */,
+				CD5725B61C86CC7F00A307B2 /* LYMessage.h */,
+				CD5725B71C86CC7F00A307B2 /* LYMessage.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -465,8 +465,8 @@
 		CDAFE2211C7CA34300C8FB91 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CD5725B21C86CADA00A307B2 /* normal_face.plist */,
 				CDAFE2221C7CA36200C8FB91 /* images */,
+				CD5725B21C86CADA00A307B2 /* normal_face.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -474,9 +474,9 @@
 		CDAFE2221C7CA36200C8FB91 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				CDE74A3A1C80999B0082335D /* gy.jpg */,
 				CD4142531C7FFAD600ADD5F6 /* bc.jpg */,
 				CDAFE2291C7CA47100C8FB91 /* gn.jpg */,
+				CDE74A3A1C80999B0082335D /* gy.jpg */,
 				CDAFE2251C7CA45300C8FB91 /* jtm.jpg */,
 				CDAFE22B1C7CA48400C8FB91 /* ssm.jpg */,
 				CDAFE2271C7CA46300C8FB91 /* sym.jpg */,
@@ -492,8 +492,7 @@
 				CDAFE2421C7CBDC600C8FB91 /* LYUser.h */,
 				CDAFE2431C7CBDC600C8FB91 /* LYUser.m */,
 			);
-			name = Model;
-			path = ../Contacts/Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		CDAFE2481C7CC2A700C8FB91 /* View */ = {
@@ -515,12 +514,12 @@
 		CDD05A871C7B62230022BD65 = {
 			isa = PBXGroup;
 			children = (
+				4063A65C5F17C76CF5D5819F /* Frameworks */,
+				F3250EC9A7F22DB67B1805E5 /* Pods */,
 				CDD05A911C7B62230022BD65 /* Products */,
 				CDD05A921C7B62230022BD65 /* WeChat */,
 				CDD05AAC1C7B62230022BD65 /* WeChatTests */,
 				CDD05AB71C7B62230022BD65 /* WeChatUITests */,
-				F3250EC9A7F22DB67B1805E5 /* Pods */,
-				4063A65C5F17C76CF5D5819F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -537,8 +536,8 @@
 		CDD05A921C7B62230022BD65 /* WeChat */ = {
 			isa = PBXGroup;
 			children = (
-				CD39FADC1E916E15003844A4 /* Resources */,
 				CD3406FB1C7EE80D00E0DF69 /* Classes */,
+				CD39FADC1E916E15003844A4 /* Resources */,
 				CDD05A931C7B62230022BD65 /* Supporting Files */,
 			);
 			path = WeChat;
@@ -584,11 +583,11 @@
 		CDD05AC71C7B65A40022BD65 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				CDACBAAF1E92CB1200B9A707 /* Tools */,
 				CDD05AE51C7B6A8F0022BD65 /* Category */,
 				CDA96F861C7C56A100E76D94 /* Common */,
 				CDD05AE91C7B6E9F0022BD65 /* Global */,
 				CDAFE2211C7CA34300C8FB91 /* Resources */,
+				CDACBAAF1E92CB1200B9A707 /* Tools */,
 				CDD05A961C7B62230022BD65 /* AppDelegate.h */,
 				CDD05A971C7B62230022BD65 /* AppDelegate.m */,
 			);
@@ -618,10 +617,10 @@
 		CDD05AD11C7B677F0022BD65 /* WeChat */ = {
 			isa = PBXGroup;
 			children = (
-				CD5725B91C86D6D900A307B2 /* Helper */,
-				CDA139141C81AE7700F6946C /* View */,
 				CDD05AD81C7B69020022BD65 /* Controller */,
+				CD5725B91C86D6D900A307B2 /* Helper */,
 				CDA96F821C7C546500E76D94 /* Model */,
+				CDA139141C81AE7700F6946C /* View */,
 				CDA96F7E1C7C53B200E76D94 /* View */,
 			);
 			path = WeChat;
@@ -630,8 +629,8 @@
 		CDD05AD21C7B67E50022BD65 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				CD77D1D31C8049EC00767B8D /* View */,
 				CDD05AD91C7B691A0022BD65 /* Controller */,
+				CD77D1D31C8049EC00767B8D /* View */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -639,8 +638,8 @@
 		CDD05AD31C7B68140022BD65 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
-				CDAFE2411C7CBDAE00C8FB91 /* Model */,
 				CDD05ADA1C7B69240022BD65 /* Controller */,
+				CDAFE2411C7CBDAE00C8FB91 /* Model */,
 				CDAFE2481C7CC2A700C8FB91 /* View */,
 			);
 			path = Discover;
@@ -658,14 +657,14 @@
 		CDD05AD81C7B69020022BD65 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CDD05AD51C7B68FB0022BD65 /* LYWeChatViewController.h */,
-				CDD05AD61C7B68FB0022BD65 /* LYWeChatViewController.m */,
-				CDA139111C81A90900F6946C /* LYChatViewController.h */,
-				CDA139121C81A90900F6946C /* LYChatViewController.m */,
 				CD3A9B301C8747250073F15F /* LYChatBoxViewController.h */,
 				CD3A9B311C8747250073F15F /* LYChatBoxViewController.m */,
 				CD3A9B331C8747EE0073F15F /* LYChatMessageViewController.h */,
 				CD3A9B341C8747EE0073F15F /* LYChatMessageViewController.m */,
+				CDA139111C81A90900F6946C /* LYChatViewController.h */,
+				CDA139121C81A90900F6946C /* LYChatViewController.m */,
+				CDD05AD51C7B68FB0022BD65 /* LYWeChatViewController.h */,
+				CDD05AD61C7B68FB0022BD65 /* LYWeChatViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -691,12 +690,12 @@
 		CDD05ADB1C7B69300022BD65 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CDD05AE21C7B69750022BD65 /* LYMeViewController.h */,
-				CDD05AE31C7B69750022BD65 /* LYMeViewController.m */,
-				CD77D1D01C80385A00767B8D /* LYMeDetailViewController.h */,
-				CD77D1D11C80385A00767B8D /* LYMeDetailViewController.m */,
 				CDA139061C819FCC00F6946C /* LYExpressionViewController.h */,
 				CDA139071C819FCC00F6946C /* LYExpressionViewController.m */,
+				CD77D1D01C80385A00767B8D /* LYMeDetailViewController.h */,
+				CD77D1D11C80385A00767B8D /* LYMeDetailViewController.m */,
+				CDD05AE21C7B69750022BD65 /* LYMeViewController.h */,
+				CDD05AE31C7B69750022BD65 /* LYMeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -708,12 +707,12 @@
 				CDACBAA71E92C97600B9A707 /* MBProgressHUD+LYAdd.m */,
 				CDAFE2451C7CC01F00C8FB91 /* NSString+LY.h */,
 				CDAFE2461C7CC01F00C8FB91 /* NSString+LY.m */,
+				CD77D1CD1C802CF300767B8D /* UIDevice+LY.h */,
+				CD77D1CE1C802CF300767B8D /* UIDevice+LY.m */,
 				CDD05AE61C7B6AAD0022BD65 /* UIImage+LY.h */,
 				CDD05AE71C7B6AAD0022BD65 /* UIImage+LY.m */,
 				CDA96F8B1C7C599D00E76D94 /* UIView+LY.h */,
 				CDA96F8C1C7C599D00E76D94 /* UIView+LY.m */,
-				CD77D1CD1C802CF300767B8D /* UIDevice+LY.h */,
-				CD77D1CE1C802CF300767B8D /* UIDevice+LY.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -721,17 +720,17 @@
 		CDD05AE91C7B6E9F0022BD65 /* Global */ = {
 			isa = PBXGroup;
 			children = (
-				CDACBAAE1E92C9D200B9A707 /* Singleton.h */,
 				CDACBAA91E92C9CA00B9A707 /* LYConst.h */,
 				CDACBAAA1E92C9CA00B9A707 /* LYConst.m */,
+				CDE74A3C1C809A3E0082335D /* LYDataHelper.h */,
+				CDE74A3D1C809A3E0082335D /* LYDataHelper.m */,
 				CDACBAAB1E92C9CA00B9A707 /* LYFoundation+Log.m */,
 				CD784A761C7EF13D00521B39 /* LYUIHelper.h */,
 				CD784A771C7EF13D00521B39 /* LYUIHelper.m */,
-				CDD05AEA1C7B6ED40022BD65 /* Macros.h */,
 				CD4142501C7FED9300ADD5F6 /* LYUserHelper.h */,
 				CD4142511C7FED9300ADD5F6 /* LYUserHelper.m */,
-				CDE74A3C1C809A3E0082335D /* LYDataHelper.h */,
-				CDE74A3D1C809A3E0082335D /* LYDataHelper.m */,
+				CDD05AEA1C7B6ED40022BD65 /* Macros.h */,
+				CDACBAAE1E92C9D200B9A707 /* Singleton.h */,
 			);
 			path = Global;
 			sourceTree = "<group>";
