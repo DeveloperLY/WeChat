@@ -12,12 +12,21 @@
 // 环信
 #import <Hyphenate/Hyphenate.h>
 
+#import "LYConst.h"
 #import "Macros.h"
+#import "LYIdentityManager.h"
+#import "LYIdentityObject.h"
+
+// lib
+#import <LYCategories/LYCategories.h>
+#import <MJExtension/MJExtension.h>
 
 /** ----- Category ----- */
 #import "UIImage+LY.h"
 #import "UIView+LY.h"
 #import "NSString+LY.h"
 #import "UIDevice+LY.h"
+
+#import <SVProgressHUD/SVProgressHUD.h>
 
 #endif /* WeChat_PrefixHeader_pch */

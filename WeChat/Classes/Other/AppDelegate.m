@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LYTabBarController.h"
+#import "LYLoginAndRegisterViewController.h"
 
 @interface AppDelegate ()
 
@@ -26,13 +27,22 @@
     options.apnsCertName = @"APNs_development";
     [[EMClient sharedClient] initializeSDKWithOptions:options];
     
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
-    self.window.rootViewController = [[LYTabBarController alloc] init];
-    
-    [self.window makeKeyAndVisible];
+    // 加载窗口
+    [self setUpRootViewController];
     
     return YES;
+}
+
+- (void)setUpRootViewController {
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    // 判断用户是否登录
+    if (kStringIsEmpty(self.identityManager.identityObject.userName) && ![[EMClient sharedClient] isLoggedIn]) {
+        self.window.rootViewController = [[LYLoginAndRegisterViewController alloc] init];
+    } else {
+        self.window.rootViewController = [[LYTabBarController alloc] init];
+    }
+    
+    [self.window makeKeyAndVisible];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -67,6 +77,18 @@
             NSLog([self class], @"createDefaultDocumentIfNeed", error);
         }
     }
+}
+
+#pragma mark - Setter And Getter
+- (LYIdentityManager *)identityManager {
+    if (!_identityManager) {
+        _identityManager = [LYIdentityManager manager];
+        [_identityManager readAuthorizeData];
+        //保存当前的版本号
+        _identityManager.identityObject.currentSoftVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+        [_identityManager saveAuthorizeData];
+    }
+    return _identityManager;
 }
 
 @end

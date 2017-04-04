@@ -12,6 +12,9 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+/** 登录用户的管理 */
+@property (strong,nonatomic) LYIdentityManager *identityManager;
+
 
 @end
 

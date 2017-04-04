@@ -18,26 +18,26 @@ PODS:
   - LYCategories (0.9.0):
     - LYCategories/no-arc (= 0.9.0)
   - LYCategories/no-arc (0.9.0)
-  - MBProgressHUD (1.0.0)
   - MJExtension (3.0.13)
+  - SVProgressHUD (2.1.2)
   - YYCache (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - Hyphenate
   - LYCategories (~> 0.9.0)
-  - MBProgressHUD (~> 1.0.0)
   - MJExtension (~> 3.0.13)
+  - SVProgressHUD (~> 2.1.2)
   - YYCache (~> 1.0.4)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Hyphenate: 828b314ee8629d34ce0e5ef085eac70b6d4cc89c
   LYCategories: 6a842797e525e6c180b272cbcf7dcdd8e6e39462
-  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 63aff78bdbf61feff74895c48cbd4b55ab8e7bc7
+PODFILE CHECKSUM: a44258d7cc042df073c07cbe0762ee1d00440da8
 
 COCOAPODS: 1.2.0
