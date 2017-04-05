@@ -21,12 +21,21 @@
     [self createDefaultDocumentIfNeed];
     [application setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
     
-    //AppKey:注册的AppKey，详细见下面注释。
-    //apnsCertName:推送证书名（不需要加后缀），详细见下面注释。
+    // AppKey:注册的AppKey，详细见下面注释。
+    // apnsCertName:推送证书名（不需要加后缀），详细见下面注释。
     EMOptions *options = [EMOptions optionsWithAppkey:@"1103170402178540#lywechat"];
     options.apnsCertName = @"APNs_development";
     [[EMClient sharedClient] initializeSDKWithOptions:options];
     
+    // iOS8以上 注册APNS
+    if ([application respondsToSelector:@selector(registerForRemoteNotifications)]) {
+        [application registerForRemoteNotifications];
+        UIUserNotificationType notificationTypes = UIUserNotificationTypeBadge |
+        UIUserNotificationTypeSound |
+        UIUserNotificationTypeAlert;
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:notificationTypes categories:nil];
+        [application registerUserNotificationSettings:settings];
+    }
     
     // 加载窗口
     [self setUpRootViewController];
@@ -36,6 +45,7 @@
 
 - (void)setUpRootViewController {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    [SVProgressHUD showWithStatus:[NSString stringWithFormat:@"%zd", [[EMClient sharedClient] isLoggedIn]]];
     // 判断用户是否登录
     if (![[EMClient sharedClient] isLoggedIn] && !kStringIsEmpty(self.identityManager.identityObject.userName)) {
         self.window.rootViewController = [[LYLoginAndRegisterViewController alloc] init];
@@ -66,6 +76,16 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+// 将得到的deviceToken传给SDK
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    [[EMClient sharedClient] bindDeviceToken:deviceToken];
+}
+
+// 注册deviceToken失败
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    NSLog(@"error -- %@",error);
 }
 
 #pragma mark - Private Methods
