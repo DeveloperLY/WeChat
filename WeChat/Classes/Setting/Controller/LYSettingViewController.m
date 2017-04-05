@@ -8,6 +8,7 @@
 
 #import "LYSettingViewController.h"
 #import "LYNewNotiViewController.h"
+#import "LYLoginAndRegisterViewController.h"
 
 #import "LYCellItem.h"
 #import "LYUIHelper.h"
@@ -33,6 +34,17 @@
     LYCellItem *item = [group itemAtIndex: indexPath.row];
     if ([item.title isEqualToString:@"新消息通知"]) {
         vc = [[LYNewNotiViewController alloc] init];
+    } else if ([item.title isEqualToString:@"退出登录"]) {
+        WeakSelf
+        [[EMClient sharedClient] logout:YES completion:^(EMError *aError) {
+            if (!aError) {
+                [[LYIdentityManager manager] logOut];
+                weakSelf.view.window.rootViewController = [[LYLoginAndRegisterViewController alloc] init];
+                [SVProgressHUD showSuccessWithStatus:@"退出成功"];
+            } else {
+                [SVProgressHUD showErrorWithStatus:aError.errorDescription];
+            }
+        }];
     }
     if (vc != nil) {
         [self setHidesBottomBarWhenPushed:YES];
