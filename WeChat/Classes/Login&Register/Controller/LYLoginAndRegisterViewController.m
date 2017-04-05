@@ -49,11 +49,17 @@
 - (IBAction)loginButtonDidTouch:(UIButton *)sender {
     NSString *account = self.accountTextField.text;
     NSString *password = self.passwordTextField.text;
-    
+    NSLog(@"%@", [NSString stringWithFormat:@"lywechat%@", password].md5String);
     WeakSelf
     if (!kStringIsEmpty(account) && !kStringIsEmpty(password)) {
-        [[EMClient sharedClient] loginWithUsername:account password:password completion:^(NSString *aUsername, EMError *aError) {
+        BOOL isAutoLogin = [EMClient sharedClient].options.isAutoLogin;
+        if (isAutoLogin) {
+            return;
+        }
+        [[EMClient sharedClient] loginWithUsername:account password:[NSString stringWithFormat:@"lywechat%@", password].md5String completion:^(NSString *aUsername, EMError *aError) {
             if (!aError) {
+                [[EMClient sharedClient] setApnsNickname:aUsername];
+                [[EMClient sharedClient].options setIsAutoLogin:YES];
                 //记录登录信息
                 [LYIdentityManager manager].identityObject.userName = aUsername;
                 [[LYIdentityManager manager] saveAuthorizeData];

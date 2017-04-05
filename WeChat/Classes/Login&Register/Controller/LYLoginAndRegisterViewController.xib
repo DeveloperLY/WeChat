@@ -27,8 +27,8 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rUF-Ag-KWT">
-                    <rect key="frame" x="82" y="95.5" width="273" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="DeveloperLY" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rUF-Ag-KWT">
+                    <rect key="frame" x="82" y="96" width="273" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
@@ -40,20 +40,20 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yeN-qH-MTm">
-                    <rect key="frame" x="82" y="146.5" width="273" height="30"/>
+                    <rect key="frame" x="82" y="147" width="273" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNp-ST-CRm">
-                    <rect key="frame" x="222" y="206.5" width="31" height="30"/>
+                    <rect key="frame" x="222" y="207" width="31" height="30"/>
                     <state key="normal" title="登录"/>
                     <connections>
                         <action selector="loginButtonDidTouch:" destination="-1" eventType="touchUpInside" id="eq9-Uj-9H2"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlQ-mD-LUJ">
-                    <rect key="frame" x="122" y="206.5" width="31" height="30"/>
+                    <rect key="frame" x="122" y="207" width="31" height="30"/>
                     <state key="normal" title="注册"/>
                     <connections>
                         <action selector="registerButtonDidTouch:" destination="-1" eventType="touchUpInside" id="BZA-z5-5G5"/>
