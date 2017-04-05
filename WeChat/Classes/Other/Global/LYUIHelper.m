@@ -103,7 +103,7 @@
     [items addObject:frist];
     
     LYCellItem *sex = [LYCellItem createWithTitle:@"性别" subTitle:@"男"];
-    LYCellItem *pos = [LYCellItem createWithTitle:@"地址" subTitle:@"广东 广州"];
+    LYCellItem *pos = [LYCellItem createWithTitle:@"地址" subTitle:@"广东 珠海"];
     LYCellItem *proverbs = [LYCellItem createWithTitle:@"个性签名" subTitle:@"一枚单线程程序猿!"];
     LYCellGrounp *second = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:sex, pos, proverbs, nil];
     [items addObject:second];
@@ -128,7 +128,7 @@
     LYCellGrounp *group3 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:feedBack, about, nil];
     [items addObject:group3];
     
-    LYCellItem *exit = [LYCellItem createWithTitle:@"退出登陆"];
+    LYCellItem *exit = [LYCellItem createWithTitle:@"退出登录"];
     [exit setAlignment:LYCellItemAlignmentMiddle];
     LYCellGrounp *group4 = [[LYCellGrounp alloc] initWithHeaderTitle:nil footerTitle:nil cellItems:exit, nil];
     [items addObject:group4];
