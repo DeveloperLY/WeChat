@@ -12,6 +12,6 @@
 
 @interface LYChatViewController : UIViewController
 
-@property (nonatomic, strong) LYUser *user;
+@property (nonatomic, strong) EMConversation *conversation;
 
 @end
