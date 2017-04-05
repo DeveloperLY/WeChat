@@ -17,10 +17,13 @@
 
 static NSString * const ID = @"WeChatCell";
 
-@interface LYWeChatViewController () <UISearchBarDelegate>
+@interface LYWeChatViewController () <UISearchBarDelegate, EMChatManagerDelegate>
 
 /** 消息列表数据 */
 @property (nonatomic, strong) NSMutableArray *data;
+
+/** EMMessage消息数组 */
+@property (nonatomic, strong) NSMutableArray<EMConversation *> *conversations;
 
 @property (nonatomic, strong) UISearchController *searchController;
 
@@ -45,12 +48,20 @@ static NSString * const ID = @"WeChatCell";
     [self setUpTableView];
     
     // data
-    [self loadNewData];
+//    [self loadNewData];
+    
+    // 注册消息回调
+    [[EMClient sharedClient].chatManager addDelegate:self delegateQueue:nil];
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
     [self setHidesBottomBarWhenPushed:NO];
+}
+
+- (void)dealloc {
+    // 移除消息回调
+    [[EMClient sharedClient].chatManager removeDelegate:self];
 }
 
 /**
@@ -82,7 +93,7 @@ static NSString * const ID = @"WeChatCell";
 }
 
 #pragma mark - load Data
-- (void) loadNewData {
+- (void)loadNewData {
     // 测试数据
     NSMutableArray *models = [[NSMutableArray alloc] initWithCapacity:10];
     LYConversation *item1 = [[LYConversation alloc] init];
@@ -95,16 +106,27 @@ static NSString * const ID = @"WeChatCell";
     self.data = models;
 }
 
+#pragma mark - EMChatManagerDelegate
+// 接收到一条及以上非cmd消息
+- (void)messagesDidReceive:(NSArray *)aMessages {
+    NSLog(@"aMessages = %@", aMessages);
+    [self.tableView reloadData];
+}
+
+// 接收到一条及以上cmd消息
+- (void)cmdMessagesDidReceive:(NSArray *)aCmdMessages {
+    NSLog(@"aCmdMessages = %@", aCmdMessages);
+}
 
 #pragma mark - <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.data.count;
+    return self.conversations.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     LYConversationCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     
-    LYConversation *conversation = self.data[indexPath.row];
+    EMConversation *conversation = self.conversations[indexPath.row];
     
     cell.conversation = conversation;
     cell.topLineStyle = LYCellLineStyleNone;
@@ -138,12 +160,15 @@ static NSString * const ID = @"WeChatCell";
     if (!_chatVC) {
         _chatVC = [[LYChatViewController alloc] init];
     }
-    LYUser *user7 = [[LYUser alloc] init];
-    user7.username = @"项少羽";
-    user7.userID = @"xiangshaoyu";
-    user7.nickname = @"少羽";
-    user7.avatarURL = @"xsy.jpg";
-    _chatVC.user = user7;
+    EMConversation *conversation = self.conversations[indexPath.row];
+    
+//    LYUser *user7 = [[LYUser alloc] init];
+//    user7.username = @"项少羽";
+//    user7.userID = @"xiangshaoyu";
+//    user7.nickname = @"少羽";
+//    user7.avatarURL = @"user";
+    
+    _chatVC.conversation = conversation;
     [self setHidesBottomBarWhenPushed:YES];
     [self.navigationController pushViewController:_chatVC animated:YES];
     [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
@@ -190,6 +215,14 @@ static NSString * const ID = @"WeChatCell";
         [_searchController.searchBar.layer setBorderColor:LYColorAlpha(220, 220, 220, 1.0).CGColor];
     }
     return _searchController;
+}
+
+#pragma mark - getter
+- (NSMutableArray<EMConversation *> *)conversations {
+    if (!_conversations) {
+        _conversations = (NSMutableArray<EMConversation *> *)[[EMClient sharedClient].chatManager getAllConversations];
+    }
+    return _conversations;
 }
 
 @end

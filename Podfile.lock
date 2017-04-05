@@ -19,6 +19,9 @@ PODS:
     - LYCategories/no-arc (= 0.9.0)
   - LYCategories/no-arc (0.9.0)
   - MJExtension (3.0.13)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
   - SVProgressHUD (2.1.2)
   - YYCache (1.0.4)
 
@@ -27,6 +30,7 @@ DEPENDENCIES:
   - Hyphenate
   - LYCategories (~> 0.9.0)
   - MJExtension (~> 3.0.13)
+  - SDWebImage (~> 4.0.0)
   - SVProgressHUD (~> 2.1.2)
   - YYCache (~> 1.0.4)
 
@@ -35,9 +39,10 @@ SPEC CHECKSUMS:
   Hyphenate: 828b314ee8629d34ce0e5ef085eac70b6d4cc89c
   LYCategories: 6a842797e525e6c180b272cbcf7dcdd8e6e39462
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: a44258d7cc042df073c07cbe0762ee1d00440da8
+PODFILE CHECKSUM: 72751e3d2e41a8aa7640a57fdb039b3d84ae5eff
 
 COCOAPODS: 1.2.0

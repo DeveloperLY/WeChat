@@ -12,6 +12,6 @@
 
 @interface LYConversationCell : LYCommonCell
 
-@property (nonatomic, strong) LYConversation *conversation;
+@property (nonatomic, strong) EMConversation *conversation;
 
 @end

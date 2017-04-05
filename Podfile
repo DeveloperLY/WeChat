@@ -10,6 +10,7 @@ pod 'LYCategories', '~> 0.9.0'
 pod 'MJExtension', '~> 3.0.13'
 pod 'YYCache', '~> 1.0.4'
 pod 'SVProgressHUD', '~> 2.1.2'
+pod 'SDWebImage', '~> 4.0.0'
 
 # 环信相关
 #Full版本
