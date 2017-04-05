@@ -52,7 +52,7 @@
     
     WeakSelf
     if (!kStringIsEmpty(account) && !kStringIsEmpty(password)) {
-        [[EMClient sharedClient] loginWithUsername:account password:[NSString stringWithFormat:@"lywechat%@", password].md5String completion:^(NSString *aUsername, EMError *aError) {
+        [[EMClient sharedClient] loginWithUsername:account password:password completion:^(NSString *aUsername, EMError *aError) {
             if (!aError) {
                 //记录登录信息
                 [LYIdentityManager manager].identityObject.userName = aUsername;

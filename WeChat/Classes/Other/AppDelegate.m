@@ -27,6 +27,7 @@
     options.apnsCertName = @"APNs_development";
     [[EMClient sharedClient] initializeSDKWithOptions:options];
     
+    
     // 加载窗口
     [self setUpRootViewController];
     
@@ -36,7 +37,7 @@
 - (void)setUpRootViewController {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     // 判断用户是否登录
-    if (kStringIsEmpty(self.identityManager.identityObject.userName) && ![[EMClient sharedClient] isLoggedIn]) {
+    if (![[EMClient sharedClient] isLoggedIn] && !kStringIsEmpty(self.identityManager.identityObject.userName)) {
         self.window.rootViewController = [[LYLoginAndRegisterViewController alloc] init];
     } else {
         self.window.rootViewController = [[LYTabBarController alloc] init];

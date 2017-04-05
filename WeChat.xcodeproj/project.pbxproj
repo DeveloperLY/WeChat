@@ -235,6 +235,7 @@
 		CDE74A3D1C809A3E0082335D /* LYDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYDataHelper.m; sourceTree = "<group>"; };
 		CDE74A3F1C80A1650082335D /* LYWeChatSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYWeChatSearchViewController.h; sourceTree = "<group>"; };
 		CDE74A401C80A1650082335D /* LYWeChatSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYWeChatSearchViewController.m; sourceTree = "<group>"; };
+		CDF978201E94F96C00CA3A24 /* WeChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeChat.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -575,6 +576,7 @@
 		CDD05A921C7B62230022BD65 /* WeChat */ = {
 			isa = PBXGroup;
 			children = (
+				CDF978201E94F96C00CA3A24 /* WeChat.entitlements */,
 				CD3406FB1C7EE80D00E0DF69 /* Classes */,
 				CD39FADC1E916E15003844A4 /* Resources */,
 				CDD05A931C7B62230022BD65 /* Supporting Files */,
@@ -853,6 +855,11 @@
 					CDD05A8F1C7B62230022BD65 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = VW6LLKQB96;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					CDD05AA81C7B62230022BD65 = {
 						CreatedOnToolsVersion = 7.2;
@@ -1178,6 +1185,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_ENTITLEMENTS = WeChat/WeChat.entitlements;
 				DEVELOPMENT_TEAM = VW6LLKQB96;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WeChat/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "WeChat/Supporting Files/Info.plist";
@@ -1187,7 +1195,7 @@
 					"$(PROJECT_DIR)/WeChat/Classes/Other/LYWeChat/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrnb",
 					"$(PROJECT_DIR)/WeChat/Classes/Other/LYWeChat/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.developerly.lywechat;
+				PRODUCT_BUNDLE_IDENTIFIER = net.developerly.lyeasemob;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1198,6 +1206,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_ENTITLEMENTS = WeChat/WeChat.entitlements;
 				DEVELOPMENT_TEAM = VW6LLKQB96;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WeChat/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "WeChat/Supporting Files/Info.plist";
@@ -1207,7 +1216,7 @@
 					"$(PROJECT_DIR)/WeChat/Classes/Other/LYWeChat/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrnb",
 					"$(PROJECT_DIR)/WeChat/Classes/Other/LYWeChat/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.developerly.lywechat;
+				PRODUCT_BUNDLE_IDENTIFIER = net.developerly.lyeasemob;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

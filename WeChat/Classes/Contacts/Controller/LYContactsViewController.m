@@ -20,7 +20,7 @@
 static NSString * const cellID = @"friendCell";
 static NSString * const headerID = @"friendHeader";
 
-@interface LYContactsViewController () <UISearchBarDelegate>
+@interface LYContactsViewController () <UISearchBarDelegate, EMContactManagerDelegate>
 
 /** 功能列表 */
 @property (nonatomic, strong) LYCellGrounp *functionGroup;
@@ -59,6 +59,24 @@ static NSString * const headerID = @"friendHeader";
     
     // data
     [self initData];
+    
+    //注册好友回调
+    [[EMClient sharedClient].contactManager addDelegate:self delegateQueue:nil];
+}
+
+- (void)friendRequestDidReceiveFromUser:(NSString *)aUsername message:(NSString *)aMessage {
+    EMError *error = [[EMClient sharedClient].contactManager acceptInvitationForUsername:aUsername];
+    if (!error) {
+        NSLog(@"发送同意成功");
+    }
+}
+
+- (void)friendRequestDidApproveByUser:(NSString *)aUsername {
+    NSLog(@"用户%@已经同意添加你为好友", aUsername);
+}
+
+- (void)friendRequestDidDeclineByUser:(NSString *)aUsername {
+    NSLog(@"用户%@已经拒绝你的好友申请", aUsername);
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -170,6 +188,13 @@ static NSString * const headerID = @"friendHeader";
 
 #pragma mark - Private Methods
 - (void)initData {
+    EMError *error = nil;
+    NSArray *userlist = [[EMClient sharedClient].contactManager getContactsFromServerWithError:&error];
+    if (!error) {
+        NSLog(@"获取成功 -- %@", userlist);
+    } else {
+        NSLog(@"%@", error.errorDescription);
+    }
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         self.friendsArray = [[NSMutableArray alloc] initWithCapacity:3];
         LYUser *user1 = [[LYUser alloc] init];
@@ -180,7 +205,7 @@ static NSString * const headerID = @"friendHeader";
         [_friendsArray addObject:user1];
         LYUser *user2 = [[LYUser alloc] init];
         user2.username = @"项少羽";
-        user2.userID = @"xiangshaoyu";
+        user2.userID = @"shaoyu";
         user2.nickname = @"少羽";
         user2.avatarURL = @"xsy.jpg";
         [_friendsArray addObject:user2];
