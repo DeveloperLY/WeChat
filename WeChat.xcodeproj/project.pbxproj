@@ -1197,6 +1197,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.developerly.lyeasemob;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1218,6 +1219,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.developerly.lyeasemob;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

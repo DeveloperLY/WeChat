@@ -34,9 +34,11 @@
 #pragma mark - Getter and Setter
 - (void)setMessage:(LYMessage *)message {
     [super setMessage:message];
-    if (message.imagePath != nil) {
-        if (message.imagePath.length > 0) {
-            self.messageImageView.image = message.image;
+    if (message.imageURL != nil) {
+        if (message.imageURL.length > 0) {
+//            self.messageImageView.image = message.image;
+            NSLog(@".......%@", message.imageURL);
+            [self.messageImageView sd_setImageWithURL:[NSURL URLWithString:message.imageURL] placeholderImage:[UIImage imageNamed:@"sharemore_pic"]];
         } else {
             // network Image
         }

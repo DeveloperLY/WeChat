@@ -54,7 +54,6 @@
         if (!aError) {
             for (EMMessage *message in aMessages) {
                 LYMessage *recMessage = [[LYMessage alloc] init];
-                recMessage.messageType = LYMessageTypeText;
                 recMessage.ownerType = message.direction == EMMessageDirectionSend ? LYMessageOwnerTypeSelf : LYMessageOwnerTypeOther;
                 recMessage.sendDate = [NSDate dateWithTimeIntervalSince1970:message.localTime/ 1000.0];
                 LYUser *sender = [[LYUser alloc] init];
@@ -69,6 +68,7 @@
                         NSString *txt = textBody.text;
                         NSLog(@"收到的文字是 txt -- %@",txt);
                         recMessage.text = txt;
+                        recMessage.messageType = LYMessageTypeText;
                     }
                         break;
                     case EMMessageBodyTypeImage: {
@@ -88,7 +88,8 @@
                         NSLog(@"小图的W -- %f ,大图的H -- %f",body.thumbnailSize.width,body.thumbnailSize.height);
                         NSLog(@"小图的下载状态 -- %lu",body.thumbnailDownloadStatus);
                         
-                        recMessage.imagePath = body.thumbnailRemotePath;
+                        recMessage.imageURL = body.remotePath;
+                        recMessage.messageType = LYMessageTypeImage;
                     }
                         break;
                     case EMMessageBodyTypeLocation: {
@@ -154,7 +155,6 @@
 - (void)messagesDidReceive:(NSArray *)aMessages {
     for (EMMessage *message in aMessages) {
         LYMessage *recMessage = [[LYMessage alloc] init];
-        recMessage.messageType = LYMessageTypeText;
         recMessage.ownerType = message.direction == EMMessageDirectionSend ? LYMessageOwnerTypeSelf : LYMessageOwnerTypeOther;
         recMessage.sendDate = [NSDate dateWithTimeIntervalSince1970:message.localTime/ 1000.0];
         LYUser *sender = [[LYUser alloc] init];
@@ -169,6 +169,7 @@
                 NSString *txt = textBody.text;
                 NSLog(@"收到的文字是 txt -- %@",txt);
                 recMessage.text = txt;
+                recMessage.messageType = LYMessageTypeText;
             }
                 break;
             case EMMessageBodyTypeImage: {
@@ -188,7 +189,8 @@
                 NSLog(@"小图的W -- %f ,大图的H -- %f",body.thumbnailSize.width,body.thumbnailSize.height);
                 NSLog(@"小图的下载状态 -- %lu",body.thumbnailDownloadStatus);
                 
-                recMessage.imagePath = body.localPath;
+                recMessage.imageURL = body.remotePath;
+                recMessage.messageType = LYMessageTypeImage;
             }
                 break;
             case EMMessageBodyTypeLocation: {
@@ -260,14 +262,14 @@
     message.sender = [LYUserHelper sharedUserHelper].user;
     [self.chatMessageVC addNewMessage:message];
     
-    LYMessage *recMessage = [[LYMessage alloc] init];
-    recMessage.messageType = message.messageType;
-    recMessage.ownerType = LYMessageOwnerTypeOther;
-    recMessage.sendDate = [NSDate date];
-    recMessage.text = message.text;
-    recMessage.imagePath = message.imagePath;
-    recMessage.sender = message.sender;
-    [self.chatMessageVC addNewMessage:recMessage];
+//    LYMessage *recMessage = [[LYMessage alloc] init];
+//    recMessage.messageType = message.messageType;
+//    recMessage.ownerType = LYMessageOwnerTypeOther;
+//    recMessage.sendDate = [NSDate date];
+//    recMessage.text = message.text;
+//    recMessage.imagePath = message.imagePath;
+//    recMessage.sender = message.sender;
+//    [self.chatMessageVC addNewMessage:recMessage];
     
     [self.chatMessageVC scrollToBottom];
 }

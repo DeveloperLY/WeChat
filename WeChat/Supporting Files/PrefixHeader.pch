@@ -28,5 +28,6 @@
 #import "UIDevice+LY.h"
 
 #import <SVProgressHUD/SVProgressHUD.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 
 #endif /* WeChat_PrefixHeader_pch */
