@@ -259,6 +259,39 @@
 
 #pragma mark - LYChatBoxViewControllerDelegate
 - (void)chatBoxViewController:(LYChatBoxViewController *)chatboxViewController sendMessage:(LYMessage *)message {
+    switch (message.messageType) {
+        case LYMessageTypeText:{
+            EMTextMessageBody *body = [[EMTextMessageBody alloc] initWithText:message.text];
+            NSString *from = [[EMClient sharedClient] currentUsername];
+            // 生成Message
+            EMMessage *message = [[EMMessage alloc] initWithConversationID:[self.conversation latestMessage].from from:from to:[self.conversation latestMessage].from body:body ext:nil];
+            message.chatType = EMChatTypeChat;// 设置为单聊消息
+        }
+            break;
+        case LYMessageTypeImage:{
+            
+        }
+            break;
+        case LYMessageTypeVoice:{
+            
+        }
+            break;
+        case LYMessageTypeVideo:{
+            
+        }
+            break;
+        case LYMessageTypeFile:{
+            
+        }
+            break;
+        case LYMessageTypeLocation:{
+            
+        }
+            break;
+        default:
+            break;
+    }
+    
     message.sender = [LYUserHelper sharedUserHelper].user;
     [self.chatMessageVC addNewMessage:message];
     
